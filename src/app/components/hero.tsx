@@ -10,20 +10,20 @@ export default function Hero() {
   return (
     <section className="relative container mx-auto flex min-h-screen w-full items-center justify-center overflow-hidden">
       <BackgroundRippleEffect />
-      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center justify-center gap-8 md:flex-row lg:gap-12">
+      <div className="relative z-10 flex w-full max-w-6xl flex-col items-center justify-center gap-8 lg:flex-row lg:gap-12">
         {/* mobile image */}
-        <div className="relative z-10 block h-[150px] w-[150px] flex-shrink-0 overflow-hidden rounded-full md:hidden">
+        <div className="relative z-10 block h-[200px] w-[200px] flex-shrink-0 overflow-hidden rounded-full lg:hidden">
           <Image
             src={portfolioData.hero.imageUrl}
             alt={`${portfolioData.hero.name}`}
             fill
-            sizes="(max-width: 768px) 150px, 0vw"
+            sizes="(max-width: 640px) 200px, (max-width: 1024px) 250px, 0vw"
             className="dark:border-primary/20 border-muted-foreground rounded-full border-4 object-cover object-top transition-transform duration-300 hover:scale-105"
             priority
           />
         </div>
 
-        <div className="flex flex-1 flex-col items-center justify-center gap-4 md:items-start">
+        <div className="flex flex-1 flex-col items-center justify-center gap-4 lg:items-start">
           {/* Availability */}
           <HoverBorderGradient as="button" className="flex items-center justify-center gap-2 rounded-full px-3 py-1">
             <div className="h-2 w-2 animate-pulse rounded-full bg-green-500 text-white dark:bg-green-500" />
@@ -35,10 +35,10 @@ export default function Hero() {
             text="I build "
             words={portfolioData.hero.roles}
             duration={3000}
-            className="text-muted-foreground text-xl font-medium lg:text-3xl"
+            className="text-muted-foreground text-2xl font-medium lg:text-3xl"
           />
 
-          <p className="text-muted-foreground text-center text-base leading-relaxed md:text-start">
+          <p className="text-muted-foreground text-center text-base leading-relaxed lg:text-start">
             {portfolioData.hero.description}
           </p>
 
@@ -72,12 +72,12 @@ export default function Hero() {
         </div>
 
         {/* image section */}
-        <div className="relative hidden h-[450px] w-[450px] flex-shrink-0 overflow-hidden rounded-lg md:block">
+        <div className="relative hidden h-[450px] w-[450px] flex-shrink-0 overflow-hidden rounded-lg lg:block">
           <Image
             src={portfolioData.hero.imageUrl}
             alt={`${portfolioData.hero.name}`}
             fill
-            sizes="(max-width: 1024px) 0vw, 450px"
+            sizes="(max-width: 1024px) 0vw, (max-width: 1280px) 400px, 450px"
             className="dark:border-primary/20 border-muted-foreground rounded-lg border-4 object-cover object-top transition-transform duration-300 hover:scale-105"
             priority
           />
