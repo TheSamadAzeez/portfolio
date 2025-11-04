@@ -11,6 +11,7 @@ import {
   IconTerminal2,
   IconSunFilled,
   IconMoonStars,
+  IconBriefcase,
 } from '@tabler/icons-react'
 import { useTheme } from 'next-themes'
 
@@ -28,6 +29,11 @@ export function Dock() {
       title: 'Home',
       icon: <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
       href: '#',
+    },
+    {
+      title: 'Experience',
+      icon: <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      href: '#experience',
     },
 
     {
