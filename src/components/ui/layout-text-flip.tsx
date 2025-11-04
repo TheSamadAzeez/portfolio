@@ -26,17 +26,14 @@ export const LayoutTextFlip = ({
 
   return (
     <div className="flex items-center justify-center gap-3">
-      <motion.span
-        layoutId="subtext"
-        className={cn('md:text-4xl" text-2xl font-bold tracking-tight drop-shadow-lg', className)}
-      >
+      <motion.span layoutId="subtext" className={cn('" text-2xl font-bold tracking-tight drop-shadow-lg', className)}>
         {text}
       </motion.span>
 
       <motion.span
         layout
         className={cn(
-          'relative w-fit overflow-hidden rounded-md border border-transparent bg-white px-4 py-2 font-sans text-2xl font-bold tracking-tight text-black shadow-sm ring shadow-black/10 ring-black/10 drop-shadow-lg md:text-4xl dark:bg-neutral-900 dark:text-white dark:shadow-sm dark:ring-1 dark:shadow-white/10 dark:ring-white/10',
+          'relative w-fit overflow-hidden rounded-md border border-transparent bg-white px-4 py-2 font-sans text-2xl font-bold tracking-tight text-black shadow-sm ring shadow-black/10 ring-black/10 drop-shadow-lg dark:bg-neutral-900 dark:text-white dark:shadow-sm dark:ring-1 dark:shadow-white/10 dark:ring-white/10',
           className,
         )}
       >
