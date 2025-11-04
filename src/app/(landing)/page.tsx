@@ -1,3 +1,4 @@
+import Experiences from '../components/experiences'
 import Hero from '../components/hero'
 import { Metadata } from 'next'
 
@@ -8,8 +9,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="h-screen w-full overflow-hidden">
+    <section className="h-screen w-full">
       <Hero />
+      <Experiences />
     </section>
   )
 }
