@@ -2,10 +2,28 @@
 
 import React from 'react'
 import { FloatingDock } from '@/components/ui/floating-dock'
-import { IconBrandGithub, IconBrandX, IconExchange, IconHome, IconNewSection, IconTerminal2 } from '@tabler/icons-react'
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+  IconSunFilled,
+  IconMoonStars,
+} from '@tabler/icons-react'
+import { useTheme } from 'next-themes'
 
 export function Dock() {
-  const links = [
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = React.useState(false)
+
+  // Avoid hydration mismatch
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const links: { title: string; icon: React.ReactNode; href: string; onClick?: () => void }[] = [
     {
       title: 'Home',
       icon: <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
@@ -44,12 +62,28 @@ export function Dock() {
       href: '#',
     },
   ]
+
+  // Add theme toggle button based on current theme
+  if (mounted) {
+    links.push({
+      title: theme === 'dark' ? 'Light Mode' : 'Dark Mode',
+      icon:
+        theme === 'dark' ? (
+          <IconSunFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ) : (
+          <IconMoonStars className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ),
+      href: '#',
+      onClick: () => setTheme(theme === 'dark' ? 'light' : 'dark'),
+    })
+  }
+
   return (
     <div className="flex h-[35rem] w-full items-center justify-center">
       <FloatingDock
         items={links}
-        desktopClassName="fixed bottom-3 backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 rounded-3xl shadow-xl"
-        mobileClassName="fixed bottom-2 right-1"
+        desktopClassName="fixed bottom-3 z-10 backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 rounded-3xl shadow-xl"
+        mobileClassName="fixed bottom-2 z-10 right-1"
       />
     </div>
   )
