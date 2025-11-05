@@ -98,4 +98,90 @@ export const portfolioData = {
       },
     },
   ],
+  education: [
+    {
+      id: '1',
+      institution: 'Lagos State University',
+      degree: "Bachelor's Degree of Computer Science (BCS)",
+      field: 'Computer Science',
+      src: '/images/lasu-logo.png', // You'll need to add your university logo
+      start: '2021',
+      end: '2025',
+      content: () => {
+        return (
+          <p>
+            Pursuing a comprehensive education in Computer Science with focus on software engineering, algorithms, data
+            structures, and modern web technologies. <br /> <br /> Developed strong foundation in programming, database
+            management, and system design while working on various academic and personal projects that enhanced
+            practical skills in full-stack development.
+          </p>
+        )
+      },
+    },
+  ],
+  skills: [
+    {
+      name: 'JavaScript',
+    },
+    {
+      name: 'TypeScript',
+    },
+    {
+      name: 'React',
+    },
+    {
+      name: 'Next.js',
+    },
+    {
+      name: 'Tailwind CSS',
+    },
+    {
+      name: 'Redux',
+    },
+    {
+      name: 'Zustand',
+    },
+    {
+      name: 'Node.js',
+    },
+    {
+      name: 'NestJS',
+    },
+    {
+      name: 'ReactNative',
+    },
+    {
+      name: 'IOS Development',
+    },
+    {
+      name: 'Android Development',
+    },
+    {
+      name: 'Docker',
+    },
+    {
+      name: 'Git',
+    },
+    {
+      name: 'MongoDB',
+    },
+    {
+      name: 'MySQL',
+    },
+    {
+      name: 'PostgreSQL',
+    },
+    {
+      name: 'Prisma',
+    },
+    {
+      name: 'Drizzle',
+    },
+    {
+      name: 'Stripe',
+    },
+    {
+      name: 'Figma',
+    },
+  ],
 }
