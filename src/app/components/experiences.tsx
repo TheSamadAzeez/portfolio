@@ -36,7 +36,7 @@ export default function Experiences() {
   return (
     <section className="container mx-auto" id="experience">
       <div className="mb-4 text-center">
-        <h1 className="mb-8 text-4xl font-bold md:text-5xl">Work Experience</h1>
+        <h1 className="mb-2 text-4xl font-bold md:text-5xl">Work Experience</h1>
         <p className="text-muted-foreground text-xl">My professional journey</p>
       </div>
 
