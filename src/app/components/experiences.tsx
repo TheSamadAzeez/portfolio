@@ -5,6 +5,9 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useOutsideClick } from '@/hooks/use-outside-click'
 import Image from 'next/image'
 import { IconChevronRight } from '@tabler/icons-react'
+import { portfolioData } from '../../../utils/data'
+
+const cards = portfolioData.experiences
 
 export default function Experiences() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null)
@@ -201,86 +204,3 @@ export const CloseIcon = () => {
     </motion.svg>
   )
 }
-
-const cards = [
-  {
-    id: '1',
-    company: 'Lana Del Rey',
-    role: 'Frontend Developer',
-    src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-    start: 'January 2010',
-    end: 'December 2015',
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-          style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-          haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-          glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-          that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-        </p>
-      )
-    },
-  },
-  {
-    id: '2',
-    company: 'Lana Del Rey',
-    role: 'Frontend Developer',
-    src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-    start: 'January 2010',
-    end: 'December 2015',
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-          style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-          haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-          glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-          that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-        </p>
-      )
-    },
-  },
-  {
-    id: '3',
-    company: 'Lana Del Rey',
-    role: 'Frontend Developer',
-    src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-    start: 'January 2010',
-    end: 'December 2015',
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-          style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-          haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-          glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-          that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-        </p>
-      )
-    },
-  },
-  {
-    id: '4',
-    company: 'Lana Del Rey',
-    role: 'Frontend Developer',
-    src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-    start: 'January 2010',
-    end: 'December 2015',
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-          style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-          haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-          glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-          that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-        </p>
-      )
-    },
-  },
-]
