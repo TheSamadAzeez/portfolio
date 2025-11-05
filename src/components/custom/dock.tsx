@@ -1,19 +1,18 @@
 'use client'
 
-import React from 'react'
 import { FloatingDock } from '@/components/ui/floating-dock'
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-  IconSunFilled,
-  IconMoonStars,
   IconBriefcase,
+  IconHeadset,
+  IconHighlight,
+  IconHome,
+  IconMoonStars,
+  IconSunFilled,
+  IconTerminal2,
+  IconUser,
 } from '@tabler/icons-react'
 import { useTheme } from 'next-themes'
+import React from 'react'
 
 export function Dock() {
   const { theme, setTheme } = useTheme()
@@ -35,37 +34,25 @@ export function Dock() {
       icon: <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
       href: '#experience',
     },
-
     {
-      title: 'Products',
+      title: 'About',
+      icon: <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      href: '#about',
+    },
+    {
+      title: 'Projects',
       icon: <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
+      href: '#projects',
     },
     {
-      title: 'Components',
-      icon: <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
+      title: 'Blog',
+      icon: <IconHighlight className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      href: '#blog',
     },
     {
-      title: 'Aceternity UI',
-      icon: <img src="https://assets.aceternity.com/logo-dark.png" width={20} height={20} alt="Aceternity Logo" />,
-      href: '#',
-    },
-    {
-      title: 'Changelog',
-      icon: <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-
-    {
-      title: 'Twitter',
-      icon: <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'GitHub',
-      icon: <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
+      title: 'Contact',
+      icon: <IconHeadset className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+      href: '#contact',
     },
   ]
 
