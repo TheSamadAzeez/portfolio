@@ -75,8 +75,8 @@ export function Dock() {
     <div className="flex h-[35rem] w-full items-center justify-center">
       <FloatingDock
         items={links}
-        desktopClassName="fixed bottom-3 z-10 backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 rounded-3xl shadow-xl"
-        mobileClassName="fixed bottom-2 z-10 right-1"
+        desktopClassName="fixed bottom-3 z-100 backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 rounded-3xl shadow-xl"
+        mobileClassName="fixed bottom-2 z-100 right-1"
       />
     </div>
   )
