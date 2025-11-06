@@ -11,7 +11,7 @@ export default function Skills() {
         <p className="text-muted-foreground text-xl">Overview of my technical proficiencies</p>
       </div>
 
-      <div className="mx-auto flex max-w-[900px] flex-wrap items-center gap-2">
+      <div className="mx-auto flex max-w-[900px] flex-wrap items-center justify-center gap-2">
         {portfolioData.skills.map((skill, index) => (
           <motion.div
             key={skill.name}
