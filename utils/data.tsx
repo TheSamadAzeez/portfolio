@@ -287,4 +287,91 @@ export const portfolioData = {
       src: 'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
   ],
+  aboutPage: {
+    hero: {
+      title: "Hi, I'm Samad 👋",
+      description:
+        "I'm a passionate full-stack developer specializing in building scalable web and mobile applications using modern technologies. With a knack for creating efficient and user-friendly solutions, I enjoy turning complex problems into simple, beautiful, and intuitive designs.",
+      stats: {
+        experience: '4+ years experience',
+        availability: 'Available for hire',
+      },
+    },
+    story: {
+      title: 'My Story',
+      journey: {
+        emoji: '🚀',
+        title: 'Journey',
+        description:
+          'My journey in tech began with a curiosity about how things work and a passion for solving problems through code. What started with learning the fundamentals evolved into building full-stack applications that serve real users and solve real-world challenges.',
+        additionalDescription:
+          "Over 4+ years, I've had the privilege of working on diverse projects, from building responsive web applications to creating mobile apps with React Native. Each project has been an opportunity to learn, grow, and push the boundaries of what's possible.",
+      },
+      philosophy: {
+        emoji: '💡',
+        title: 'Philosophy',
+        description:
+          'I believe in writing clean, maintainable code and building products that truly make a difference. My approach focuses on understanding the problem first, then choosing the right tools and technologies to create efficient, scalable solutions.',
+        additionalDescription:
+          'From crafting intuitive user interfaces to architecting robust backend systems, I strive to deliver high-quality products that exceed expectations. Continuous learning and staying updated with the latest technologies keeps me sharp and ready for new challenges.',
+      },
+    },
+    technicalExpertise: {
+      title: 'Technical Expertise',
+      subtitle: 'Technologies and tools I work with',
+    },
+    activities: {
+      title: "What I'm Up To",
+      items: [
+        {
+          emoji: '🔥',
+          title: 'Currently Building',
+          description:
+            'Building scalable web and mobile applications with modern technologies like React, Next.js, and React Native. Creating efficient backend systems with Node.js and integrating with various databases and APIs.',
+        },
+        {
+          emoji: '📚',
+          title: 'Learning',
+          description:
+            'Exploring advanced patterns in React and Next.js, diving deeper into backend architecture, and keeping up with the latest trends in full-stack development. Always experimenting with new tools and technologies.',
+        },
+        {
+          emoji: '🤝',
+          title: 'Collaborating',
+          description:
+            'Working on exciting projects and contributing to open-source. Always open to collaboration opportunities and connecting with fellow developers to build amazing products together.',
+        },
+      ],
+    },
+    beyondCode: {
+      title: 'Beyond Code',
+      items: [
+        {
+          emoji: '💻',
+          title: 'Full-Stack',
+          description: 'Frontend & Backend expertise',
+        },
+        {
+          emoji: '📱',
+          title: 'Mobile Dev',
+          description: 'React Native enthusiast',
+        },
+        {
+          emoji: '🧩',
+          title: 'Problem Solver',
+          description: 'Clean code advocate',
+        },
+        {
+          emoji: '🚀',
+          title: 'Innovation',
+          description: 'Always learning & growing',
+        },
+      ],
+    },
+    cta: {
+      title: "Let's Build Something Amazing",
+      description:
+        "I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest in tech. Let's connect!",
+    },
+  },
 }
