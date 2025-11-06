@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandTwitter, IconBrandX } from '@tabler/icons-react'
+import { IconBrandGithub, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react'
 import Image from 'next/image'
 
 export const portfolioData = {
@@ -13,8 +13,8 @@ export const portfolioData = {
     imageUrl: '/images/profile-image.jpg',
     socialLinks: [
       { href: 'https://github.com/TheSamadAzeez', label: 'GitHub', icon: IconBrandGithub },
-      { href: 'https://www.linkedin.com/in/thesamadazeez', label: 'LinkedIn', icon: IconBrandX },
-      { href: 'https://x.com/thesamadazeez', label: 'Twitter', icon: IconBrandTwitter },
+      { href: 'https://www.linkedin.com/in/thesamadazeez', label: 'LinkedIn', icon: IconBrandLinkedin },
+      { href: 'https://x.com/thesamadazeez', label: 'Twitter', icon: IconBrandX },
     ],
   },
   experiences: [

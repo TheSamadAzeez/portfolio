@@ -11,7 +11,7 @@ export default function FeaturedProjects() {
     <section className="container mx-auto mt-20" id="skills">
       <div className="mb-8 text-center">
         <h1 className="mb-2 text-4xl font-bold md:text-5xl">Featured Projects</h1>
-        <p className="text-muted-foreground text-xl">Some of my work</p>
+        <p className="text-muted-foreground text-xl">Some of my works</p>
       </div>
 
       <div className="w-full">
