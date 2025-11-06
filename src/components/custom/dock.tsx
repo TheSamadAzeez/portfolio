@@ -27,32 +27,32 @@ export function Dock() {
     {
       title: 'Home',
       icon: <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
+      href: '/',
     },
     {
       title: 'Experience',
       icon: <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#experience',
+      href: '/#experience',
     },
     {
       title: 'About',
       icon: <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#about',
+      href: '/about',
     },
     {
       title: 'Projects',
       icon: <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#projects',
+      href: '/projects',
     },
     {
       title: 'Blog',
       icon: <IconHighlight className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#blog',
+      href: '/blog',
     },
     {
       title: 'Contact',
       icon: <IconHeadset className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#contact',
+      href: '/contact',
     },
   ]
 
