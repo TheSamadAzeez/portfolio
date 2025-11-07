@@ -187,9 +187,9 @@ export const portfolioData = {
   ],
   featuredProjects: [
     {
-      title: 'Real time changes',
+      title: 'E-Commerce Platform',
       description:
-        'See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.',
+        'A full-stack e-commerce platform built with Next.js, featuring real-time inventory management, secure payment processing with Stripe, and an intuitive admin dashboard. Includes user authentication, product search, and order tracking.',
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           <Image
@@ -197,15 +197,15 @@ export const portfolioData = {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="E-Commerce Platform"
           />
         </div>
       ),
     },
     {
-      title: 'Real time changes',
+      title: 'Task Management SaaS',
       description:
-        'See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.',
+        'A collaborative task management application with real-time updates, team workspaces, and advanced project tracking. Built with React, Node.js, and Socket.io for seamless real-time collaboration.',
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           <Image
@@ -213,15 +213,15 @@ export const portfolioData = {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="Task Management SaaS"
           />
         </div>
       ),
     },
     {
-      title: 'Real time changes',
+      title: 'Social Media Mobile App',
       description:
-        'See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.',
+        'A cross-platform social media app built with React Native, featuring photo sharing, real-time messaging, and social interactions. Includes push notifications, offline support, and seamless user experience.',
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           <Image
@@ -229,15 +229,15 @@ export const portfolioData = {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="Social Media Mobile App"
           />
         </div>
       ),
     },
     {
-      title: 'Real time changes',
+      title: 'Financial Dashboard',
       description:
-        'See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.',
+        'A comprehensive financial analytics dashboard with interactive charts, real-time data visualization, and advanced reporting features. Built with Next.js, TypeScript, and integrated with multiple APIs.',
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
           <Image
@@ -245,10 +245,138 @@ export const portfolioData = {
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="Financial Dashboard"
           />
         </div>
       ),
+    },
+  ],
+  projects: [
+    {
+      id: 'ecommerce-platform',
+      title: 'E-Commerce Platform',
+      description: 'A full-stack e-commerce solution with modern UI/UX and advanced features.',
+      longDescription:
+        'A comprehensive e-commerce platform built from the ground up using Next.js 14, featuring a modern and responsive design. The platform includes user authentication, product management, shopping cart functionality, secure payment processing with Stripe, order tracking, and an admin dashboard for inventory management.',
+      image: '/images/ecommerce-project.jpg',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Stripe', 'NextAuth'],
+      category: 'Full-Stack',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/ecommerce-platform',
+      liveUrl: 'https://ecommerce-platform-demo.vercel.app',
+      highlights: [
+        'Secure payment processing with Stripe',
+        'Real-time inventory management',
+        'Advanced search and filtering',
+        'Responsive design for all devices',
+        'Admin dashboard with analytics',
+      ],
+      date: '2024',
+    },
+    {
+      id: 'task-management-saas',
+      title: 'Task Management SaaS',
+      description: 'A collaborative project management tool with real-time features.',
+      longDescription:
+        'A sophisticated task management application designed for teams and individuals. Built with React and Node.js, it features real-time collaboration, project workspaces, task assignment, progress tracking, and team communication tools. The application uses Socket.io for real-time updates and includes advanced features like time tracking and reporting.',
+      image: '/images/taskmanager-project.jpg',
+      technologies: ['React', 'Node.js', 'Express', 'Socket.io', 'MongoDB', 'Redux', 'Material-UI'],
+      category: 'Web Application',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/task-manager',
+      liveUrl: 'https://taskmanager-saas-demo.vercel.app',
+      highlights: [
+        'Real-time collaboration features',
+        'Team workspaces and permissions',
+        'Advanced project analytics',
+        'Time tracking and reporting',
+        'Mobile-responsive interface',
+      ],
+      date: '2024',
+    },
+    {
+      id: 'social-media-app',
+      title: 'Social Media Mobile App',
+      description: 'A cross-platform social networking application.',
+      longDescription:
+        'A feature-rich social media application built with React Native, offering seamless cross-platform experience. The app includes photo sharing, real-time messaging, social interactions, user profiles, and push notifications. Built with modern mobile development practices and includes offline support for enhanced user experience.',
+      image: '/images/socialmedia-project.jpg',
+      technologies: ['React Native', 'Expo', 'Node.js', 'MongoDB', 'Socket.io', 'AWS S3', 'Firebase'],
+      category: 'Mobile App',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/social-media-app',
+      liveUrl: 'https://social-media-app-demo.vercel.app',
+      highlights: [
+        'Cross-platform compatibility',
+        'Real-time messaging system',
+        'Photo and video sharing',
+        'Push notifications',
+        'Offline support and caching',
+      ],
+      date: '2023',
+    },
+    {
+      id: 'financial-dashboard',
+      title: 'Financial Analytics Dashboard',
+      description: 'A comprehensive dashboard for financial data visualization.',
+      longDescription:
+        'An advanced financial analytics dashboard that provides comprehensive insights into financial data. Built with Next.js and TypeScript, it features interactive charts, real-time data updates, advanced filtering options, and detailed reporting capabilities. The dashboard integrates with multiple financial APIs and provides exportable reports.',
+      image: '/images/dashboard-project.jpg',
+      technologies: ['Next.js', 'TypeScript', 'Chart.js', 'D3.js', 'PostgreSQL', 'Redis', 'Docker'],
+      category: 'Dashboard',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/financial-dashboard',
+      liveUrl: 'https://financial-dashboard-demo.vercel.app',
+      highlights: [
+        'Interactive data visualizations',
+        'Real-time financial data integration',
+        'Advanced filtering and search',
+        'Exportable reports and analytics',
+        'Multi-currency support',
+      ],
+      date: '2024',
+    },
+    {
+      id: 'weather-app',
+      title: 'Weather Forecast App',
+      description: 'A beautiful weather application with detailed forecasts.',
+      longDescription:
+        'A sleek and intuitive weather application that provides accurate weather forecasts and current conditions. Built with React and integrated with multiple weather APIs for reliable data. Features include location-based weather, detailed forecasts, weather maps, and personalized weather alerts.',
+      image: '/images/weather-project.jpg',
+      technologies: ['React', 'JavaScript', 'CSS3', 'Weather API', 'Geolocation API', 'Chart.js'],
+      category: 'Web Application',
+      featured: false,
+      githubUrl: 'https://github.com/thesamadazeez/weather-app',
+      liveUrl: 'https://weather-forecast-demo.netlify.app',
+      highlights: [
+        'Location-based weather detection',
+        'Detailed 7-day forecasts',
+        'Interactive weather maps',
+        'Customizable weather alerts',
+        'Responsive mobile design',
+      ],
+      date: '2023',
+    },
+    {
+      id: 'blog-cms',
+      title: 'Headless CMS Blog',
+      description: 'A modern blog platform with headless CMS architecture.',
+      longDescription:
+        'A modern blogging platform built with a headless CMS architecture using Next.js and Strapi. Features include content management, SEO optimization, comment system, social sharing, and a responsive design. The platform supports multiple authors and includes advanced content scheduling capabilities.',
+      image: '/images/blog-project.jpg',
+      technologies: ['Next.js', 'Strapi', 'GraphQL', 'PostgreSQL', 'Tailwind CSS', 'Markdown'],
+      category: 'CMS',
+      featured: false,
+      githubUrl: 'https://github.com/thesamadazeez/headless-blog',
+      liveUrl: 'https://headless-blog-demo.vercel.app',
+      highlights: [
+        'Headless CMS architecture',
+        'SEO optimized content',
+        'Multi-author support',
+        'Advanced content editor',
+        'Social media integration',
+      ],
+      date: '2023',
     },
   ],
   testimonials: [
