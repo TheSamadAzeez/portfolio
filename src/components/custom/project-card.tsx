@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function ProjectCard({ key, project, index }: { key: string; project: any; index: number }) {
   return (
-    <Link href={`/projects/${project.title.toLowerCase().replace(/\s+/g, '')}`}>
+    <Link href={`/projects/${project.title.toLowerCase().replace(/\s+/g, '')}`} key={key}>
       <Card className="mx-auto w-full max-w-sm pt-0 pb-2.5 transition-all duration-700 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl">
         <CardContent className="group px-0">
           <div
