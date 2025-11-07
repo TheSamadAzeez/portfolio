@@ -35,10 +35,16 @@ export default function Education() {
 
   return (
     <section className="container mx-auto mt-20" id="education">
-      <div className="mb-4 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, margin: '-100px' }}
+        className="mb-4 text-center"
+      >
         <h1 className="mb-2 text-4xl font-bold md:text-5xl">Education</h1>
         <p className="text-muted-foreground text-xl">My academic background</p>
-      </div>
+      </motion.div>
 
       <AnimatePresence>
         {active && typeof active === 'object' && (
@@ -126,10 +132,14 @@ export default function Education() {
         ) : null}
       </AnimatePresence>
       <ul className="mx-auto w-full max-w-4xl gap-4">
-        {cards.map((card) => (
+        {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.id}-${id}`}
             key={`card-${card.id}-${id}`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true, margin: '-50px' }}
             onClick={() => setActive(card)}
             className="group flex cursor-pointer flex-row items-center justify-between rounded-xl p-4 hover:bg-neutral-50 dark:hover:bg-neutral-800"
           >
