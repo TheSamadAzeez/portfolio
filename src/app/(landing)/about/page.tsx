@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { motion } from 'motion/react'
 import { IconCopy, IconDownload, IconBriefcase } from '@tabler/icons-react'
 import Footer from '@/app/components/footer'
+import Link from 'next/link'
 
 export default function About() {
   const handleCopyEmail = () => {
@@ -14,9 +15,9 @@ export default function About() {
   }
 
   return (
-    <div className="mb-96 h-screen w-full">
+    <section className="container mx-auto h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 pt-20" id="about">
+      <div className="mx-auto px-4 pt-20" id="about">
         <div className="flex flex-col-reverse items-center justify-between gap-12 lg:flex-row">
           {/* Left Content */}
           <motion.div
@@ -124,12 +125,12 @@ export default function About() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </div>
 
-      <Separator className="container mx-auto my-16" />
+      <Separator className="mx-auto my-16" />
 
       {/* My Story Section */}
-      <section className="container mx-auto px-4">
+      <section className="mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -179,10 +180,10 @@ export default function About() {
         </div>
       </section>
 
-      <Separator className="container mx-auto my-16" />
+      <Separator className="mx-auto my-16" />
 
       {/* Technical Expertise Section */}
-      <section className="container mx-auto px-4">
+      <section className="mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 30 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -216,10 +217,10 @@ export default function About() {
         </div>
       </section>
 
-      <Separator className="container mx-auto my-16" />
+      <Separator className="mx-auto my-16" />
 
       {/* What I'm Up To Section */}
-      <section className="container mx-auto px-4">
+      <section className="mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -243,10 +244,10 @@ export default function About() {
         </div>
       </section>
 
-      <Separator className="container mx-auto my-16" />
+      <Separator className="mx-auto my-16" />
 
       {/* Beyond Code Section */}
-      <section className="container mx-auto px-4">
+      <section className="mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -265,10 +266,10 @@ export default function About() {
         </div>
       </section>
 
-      <Separator className="container mx-auto my-16" />
+      <Separator className="mx-auto my-16" />
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4">
+      <section className="mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 30 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -289,16 +290,18 @@ export default function About() {
               <IconDownload className="h-5 w-5" />
               Download Resume
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
-              <IconBriefcase className="h-5 w-5" />
-              View My Work
+            <Button size="lg" variant="outline" className="gap-2" asChild>
+              <Link href="/projects">
+                <IconBriefcase className="h-5 w-5" />
+                View My Work
+              </Link>
             </Button>
           </div>
         </motion.div>
 
         <Footer />
       </section>
-    </div>
+    </section>
   )
 }
 
