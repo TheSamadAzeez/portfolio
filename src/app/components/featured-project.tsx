@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal'
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 import Link from 'next/link'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { Button } from '@/components/ui/button'
@@ -15,7 +15,10 @@ export default function FeaturedProjects() {
       </div>
 
       <div className="w-full">
-        <StickyScroll content={portfolioData.featuredProjects} contentClassName="h-70 w-90" />
+        <StickyScroll
+          content={portfolioData.projects.filter((project) => project.featured)}
+          contentClassName="h-70 w-90"
+        />
       </div>
       <div className="mt-8 flex w-full items-center justify-center">
         <Button
