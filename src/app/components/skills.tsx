@@ -1,6 +1,6 @@
 'use client'
 
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 import { motion } from 'motion/react'
 
 export default function Skills() {

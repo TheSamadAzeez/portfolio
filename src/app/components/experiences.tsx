@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useOutsideClick } from '@/hooks/use-outside-click'
 import Image from 'next/image'
 import { IconChevronRight } from '@tabler/icons-react'
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 
 const cards = portfolioData.experiences
 

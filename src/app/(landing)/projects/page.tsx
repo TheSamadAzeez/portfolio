@@ -3,7 +3,7 @@
 import Footer from '@/app/components/footer'
 import ProjectCard from '@/components/custom/project-card'
 import { motion } from 'motion/react'
-import { portfolioData } from '../../../../utils/data'
+import { portfolioData } from '../../../data/portfolio-data'
 
 export default function Projects() {
   return (

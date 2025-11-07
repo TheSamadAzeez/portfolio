@@ -1,6 +1,6 @@
 import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
 import { LayoutTextFlip } from '@/components/ui/layout-text-flip'
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 import Link from 'next/link'
 import { LinkPreview } from '@/components/ui/link-preview'
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient'

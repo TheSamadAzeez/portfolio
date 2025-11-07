@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { portfolioData } from '../../../../utils/data'
+import { portfolioData } from '../../../data/portfolio-data'
 import { Separator } from '@/components/ui/separator'
 import { Button } from '@/components/ui/button'
 import { motion } from 'motion/react'

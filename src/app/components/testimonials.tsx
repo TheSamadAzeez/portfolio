@@ -1,5 +1,5 @@
 import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 
 export default function Testimonials() {
   return (

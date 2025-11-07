@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { portfolioData } from '../../../utils/data'
+import { portfolioData } from '../../data/portfolio-data'
 import { LinkPreview } from '@/components/ui/link-preview'
 import { Separator } from '@/components/ui/separator'
 
