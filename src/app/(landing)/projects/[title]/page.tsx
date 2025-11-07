@@ -21,7 +21,7 @@ export default async function ProjectDetailsPage({ params }: ProjectDetailsProps
   // Find project in the portfolio data with flexible matching
   const normalizedTitle = title.toLowerCase().replace(/\s+/g, '').replace(/-/g, '')
   const project = projectDetailsData.find((p: ProjectDetails) => {
-    const normalizedId = p.id.toLowerCase().replace(/\s+/g, '').replace(/-/g, '')
+    const normalizedId = p.title.toLowerCase().replace(/\s+/g, '').replace(/-/g, '')
     return normalizedId === normalizedTitle
   })
 
