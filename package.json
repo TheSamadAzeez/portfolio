@@ -2,6 +2,7 @@
   "name": "acme-webapp",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -10,7 +11,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,mjs}\"",
     "typecheck": "tsc --noEmit",
     "lint-staged": "lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "add-project": "node scripts/add-project-simple.js"
   },
   "dependencies": {
     "@radix-ui/react-hover-card": "^1.1.15",
