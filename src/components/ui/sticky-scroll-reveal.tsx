@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useMotionValueEvent, useScroll } from 'motion/react'
 import { motion } from 'motion/react'
 import { cn } from '../../lib/utils'
+import Link from 'next/link'
 
 export const StickyScroll = ({
   content,
@@ -42,42 +43,46 @@ export const StickyScroll = ({
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
-              <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-2xl font-bold"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
-                }}
-                className="text-muted-foreground mt-10 max-w-lg leading-relaxed"
-              >
-                {item.description}
-              </motion.p>
-            </div>
+            <Link key={item.title + index} href={`/projects/${item.title.toLowerCase().replace(/\s+/g, '')}`}>
+              <div className="my-20 cursor-pointer">
+                <motion.h2
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-2xl font-bold"
+                >
+                  {item.title}
+                </motion.h2>
+                <motion.p
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="text-muted-foreground mt-10 max-w-lg leading-relaxed"
+                >
+                  {item.description}
+                </motion.p>
+              </div>
+            </Link>
           ))}
           <div className="h-40" />
         </div>
       </div>
-      <div
-        className={cn(
-          'sticky top-10 hidden h-60 w-80 overflow-hidden rounded-md bg-gray-400 lg:block',
-          contentClassName,
-        )}
-      >
-        {content[activeCard].content ?? null}
-      </div>
+      <Link href={`/projects/${content[activeCard].title.toLowerCase().replace(/\s+/g, '')}`}>
+        <div
+          className={cn(
+            'sticky top-10 hidden h-60 w-80 cursor-pointer overflow-hidden rounded-md bg-gray-400 lg:block',
+            contentClassName,
+          )}
+        >
+          {content[activeCard].content ?? null}
+        </div>
+      </Link>
     </motion.div>
   )
 }
