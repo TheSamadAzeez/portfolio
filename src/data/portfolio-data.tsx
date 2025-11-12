@@ -7,7 +7,7 @@ export const portfolioData = {
     name: 'Samad Azeez',
     roles: ['Full-Stack SaaS Apps', 'web applications', 'mobile apps', 'scalable systems'],
     description:
-      'I am a full-stack developer specializing in building scalable web and mobile applications using modern technologies. With a passion for creating efficient and user-friendly solutions, I strive to deliver high-quality products that meet client needs.',
+      'I am a seasoned full-stack developer with 4+ years of professional experience building scalable web applications, mobile apps, and robust backend systems. I develop end-to-end solutions using modern technologies, delivering high-performance products that drive business growth and exceptional user experiences.',
     email: 'azeezsamad2004@gmail.com',
     location: 'Lagos, Nigeria',
     availability: 'Available for hire',
@@ -370,7 +370,7 @@ export const portfolioData = {
     hero: {
       title: "Hi, I'm Samad 👋",
       description:
-        "I'm a passionate full-stack developer specializing in building scalable web and mobile applications using modern technologies. With a knack for creating efficient and user-friendly solutions, I enjoy turning complex problems into simple, beautiful, and intuitive designs.",
+        "I'm a seasoned full-stack developer with expertise in building scalable web applications, mobile apps, and robust backend systems. With 4+ years of professional experience across the entire development stack, I develop and deliver high-performance solutions that solve complex business challenges and drive user engagement.",
       stats: {
         experience: '4+ years experience',
         availability: 'Available for hire',
@@ -380,19 +380,19 @@ export const portfolioData = {
       title: 'My Story',
       journey: {
         emoji: '🚀',
-        title: 'Journey',
+        title: 'Professional Journey',
         description:
-          'My journey in tech began with a curiosity about how things work and a passion for solving problems through code. What started with learning the fundamentals evolved into building full-stack applications that serve real users and solve real-world challenges.',
+          'My journey began with a deep curiosity about technology and has evolved into 4+ years of professional full-stack development expertise. I specialize in the complete development lifecycle - from conceptualizing user experiences to building scalable backend applications and deploying production-ready solutions.',
         additionalDescription:
-          "Over 4+ years, I've had the privilege of working on diverse projects, from building responsive web applications to creating mobile apps with React Native. Each project has been an opportunity to learn, grow, and push the boundaries of what's possible.",
+          "Throughout my career, I've mastered web development with React and Next.js, mobile app development with React Native for both iOS and Android, and backend development using Node.js, NestJS, and various databases. I've successfully delivered enterprise-level applications and SaaS solutions that serve thousands of users.",
       },
       philosophy: {
         emoji: '💡',
-        title: 'Philosophy',
+        title: 'Development Philosophy',
         description:
-          'I believe in writing clean, maintainable code and building products that truly make a difference. My approach focuses on understanding the problem first, then choosing the right tools and technologies to create efficient, scalable solutions.',
+          'I build solutions with scalability, performance, and maintainability at the core. My approach involves thoughtful application design, choosing optimal tech stacks for specific requirements, implementing best practices for security and performance, and delivering code that stands the test of time.',
         additionalDescription:
-          'From crafting intuitive user interfaces to architecting robust backend systems, I strive to deliver high-quality products that exceed expectations. Continuous learning and staying updated with the latest technologies keeps me sharp and ready for new challenges.',
+          'Whether building responsive web applications, cross-platform mobile apps, or robust APIs and microservices, I focus on creating seamless user experiences backed by solid engineering principles. I stay at the forefront of technology trends while maintaining a pragmatic approach to solving complex business challenges.',
       },
     },
     technicalExpertise: {
@@ -404,21 +404,21 @@ export const portfolioData = {
       items: [
         {
           emoji: '🔥',
-          title: 'Currently Building',
+          title: 'Building at Scale',
           description:
-            'Building scalable web and mobile applications with modern technologies like React, Next.js, and React Native. Creating efficient backend systems with Node.js and integrating with various databases and APIs.',
+            'Developing enterprise-grade web applications with Next.js, building cross-platform mobile apps with React Native, and creating robust backend APIs with Node.js/NestJS. Currently working on SaaS solutions and high-traffic applications.',
         },
         {
-          emoji: '📚',
-          title: 'Learning',
+          emoji: '🏗️',
+          title: 'Full-Stack Development',
           description:
-            'Exploring advanced patterns in React and Next.js, diving deeper into backend architecture, and keeping up with the latest trends in full-stack development. Always experimenting with new tools and technologies.',
+            'Building complete web and mobile applications from frontend to backend, optimizing database performance with PostgreSQL/MongoDB, and integrating complex third-party APIs. Focus on clean code, performance optimization, and seamless user experiences.',
         },
         {
           emoji: '🤝',
-          title: 'Collaborating',
+          title: 'Leading & Mentoring',
           description:
-            'Working on exciting projects and contributing to open-source. Always open to collaboration opportunities and connecting with fellow developers to build amazing products together.',
+            'Leading full-stack development projects, mentoring junior developers, conducting code reviews, and contributing to open-source projects. Collaborating with cross-functional teams to deliver high-impact products that drive business growth.',
         },
       ],
     },

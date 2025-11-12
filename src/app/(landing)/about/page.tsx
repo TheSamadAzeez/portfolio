@@ -258,10 +258,10 @@ export default function About() {
         </motion.div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <BeyondCodeCard emoji="💻" title="Full-Stack" description="Frontend & Backend expertise" index={0} />
-          <BeyondCodeCard emoji="📱" title="Mobile Dev" description="React Native enthusiast" index={1} />
-          <BeyondCodeCard emoji="🧩" title="Problem Solver" description="Clean code advocate" index={2} />
-          <BeyondCodeCard emoji="🚀" title="Innovation" description="Always learning & growing" index={3} />
+          <BeyondCodeCard emoji="💻" title="Full-Stack" description="Complete web & backend mastery" index={0} />
+          <BeyondCodeCard emoji="📱" title="Mobile Expert" description="iOS & Android development" index={1} />
+          <BeyondCodeCard emoji="🏗️" title="Backend Expert" description="Scalable API development" index={2} />
+          <BeyondCodeCard emoji="🚀" title="Tech Lead" description="Innovation & team guidance" index={3} />
         </div>
       </section>
 
