@@ -453,6 +453,154 @@ export const portfolioData = {
         "I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest in tech. Let's connect!",
     },
   },
+  contactPage: {
+    header: {
+      badge: {
+        emoji: '✨',
+        text: "Let's Connect",
+      },
+      title: 'Get In Touch 📮',
+      description:
+        "Whether you're looking to collaborate on a project, need technical consulting, or just want to chat about the latest in tech, I'd love to hear from you!",
+    },
+    contactMethods: [
+      {
+        id: 'email',
+        title: 'Email Me',
+        description:
+          'For project inquiries, collaboration opportunities, or detailed discussions. I typically respond within 24 hours.',
+        icon: 'Mail',
+        iconColor: 'blue',
+        buttonText: 'Copy email',
+        action: 'copyEmail',
+      },
+      {
+        id: 'social',
+        title: 'Social Networks',
+        description:
+          "Follow me for updates, quick questions, or to see what I'm working on. I'm most active on LinkedIn and Twitter.",
+        icon: 'MessageCircle',
+        iconColor: 'gray',
+        buttons: [
+          { text: 'GitHub', variant: 'outline' },
+          { text: 'LinkedIn', variant: 'outline' },
+          { text: 'X', variant: 'outline' },
+          { text: 'Send Email', variant: 'outline' },
+        ],
+      },
+    ],
+    availability: {
+      title: 'Current Availability',
+      items: [
+        {
+          id: 'response-time',
+          title: 'Response Time',
+          description: 'Usually within 24 hours',
+          icon: 'Zap',
+          iconColor: 'yellow',
+        },
+        {
+          id: 'timezone',
+          title: 'Timezone',
+          description: 'UTC+1 (Lagos, Nigeria)',
+          icon: 'Globe',
+          iconColor: 'blue',
+        },
+        {
+          id: 'status',
+          title: 'Status',
+          description: 'Available for new projects',
+          icon: 'Briefcase',
+          iconColor: 'green',
+        },
+      ],
+    },
+    services: {
+      title: 'What I Can Help With',
+      items: [
+        {
+          id: 'full-stack',
+          title: 'Full Stack Development',
+          description: 'React, Next.js, Node.js applications',
+          icon: 'Rocket',
+          iconColor: 'blue',
+        },
+        {
+          id: 'mobile',
+          title: 'Mobile Development',
+          description: 'React Native cross-platform apps',
+          icon: 'Smartphone',
+          iconColor: 'green',
+        },
+        {
+          id: 'ui-ux',
+          title: 'UI/UX Implementation',
+          description: 'Design to code translation',
+          icon: 'Palette',
+          iconColor: 'purple',
+        },
+        {
+          id: 'strategy',
+          title: 'Product Strategy',
+          description: 'Tech stack and approach planning',
+          icon: 'Lightbulb',
+          iconColor: 'indigo',
+        },
+        {
+          id: 'code-review',
+          title: 'Code Review',
+          description: 'Best practices and optimization',
+          icon: 'Code',
+          iconColor: 'teal',
+        },
+      ],
+    },
+    faq: {
+      title: 'Quick Questions',
+      items: [
+        {
+          id: 'rates',
+          question: 'What are your rates?',
+          answer:
+            "Rates vary by project scope and duration. I'm happy to discuss your budget and find a solution that works for both of us.",
+          emoji: '💰',
+          iconColor: 'yellow',
+        },
+        {
+          id: 'remote',
+          question: 'Do you work remotely?',
+          answer: 'Yes! I work with teams globally and have experience collaborating across different timezones.',
+          emoji: '🌍',
+          iconColor: 'blue',
+        },
+        {
+          id: 'timeline',
+          question: 'How long do projects take?',
+          answer:
+            'Timeline depends on complexity. Simple projects can be done in 1-2 weeks, while larger applications may take 2-3 months.',
+          emoji: '⏰',
+          iconColor: 'red',
+        },
+        {
+          id: 'support',
+          question: 'Do you provide ongoing support?',
+          answer: "Absolutely. I offer maintenance packages and ongoing support for projects I've worked on.",
+          emoji: '🔧',
+          iconColor: 'green',
+        },
+      ],
+    },
+    cta: {
+      title: 'Ready to Start Something Great?',
+      description:
+        "Let's discuss your project and see how I can help bring your ideas to life with clean code, solid architecture, and great user experience.",
+      buttons: [
+        { text: 'Copy email', icon: 'Mail', action: 'copyEmail', size: 'lg' },
+        { text: 'Download Resume', action: 'downloadResume', variant: 'outline', size: 'lg' },
+        { text: 'View My Work', action: 'viewMyWork', variant: 'outline', size: 'lg' },
+      ],
+    },
+  },
 }
 
 export const projectDetailsData: ProjectDetails[] = [
