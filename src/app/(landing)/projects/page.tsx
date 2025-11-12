@@ -11,12 +11,12 @@ export default function Projects() {
       <div className="mx-auto px-4 pt-20">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 45, scale: 0.8 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-16 text-center"
         >
-          <h1 className="mb-4 text-4xl font-bold">Projects</h1>
+          <h1 className="mb-4 text-4xl font-bold tracking-tight lg:text-6xl">Projects</h1>
           <p className="text-muted-foreground text-lg">Here are some of the projects I&apos;ve worked on.</p>
         </motion.div>
 
