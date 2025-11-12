@@ -8,12 +8,9 @@ import { motion } from 'motion/react'
 import { IconCopy, IconDownload, IconBriefcase } from '@tabler/icons-react'
 import Footer from '@/app/components/footer'
 import Link from 'next/link'
+import { handleCopyEmail } from '@/lib/utils'
 
 export default function About() {
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(portfolioData.hero.email)
-  }
-
   return (
     <section className="container mx-auto h-screen">
       {/* Hero Section */}

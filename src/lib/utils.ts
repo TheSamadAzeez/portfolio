@@ -1,6 +1,8 @@
 import { clsx, type ClassValue } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 import React from 'react'
+import { portfolioData } from '@/data/portfolio-data'
+import { toast } from 'sonner'
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -33,4 +35,12 @@ export function formatTextWithBoldBeforeColon(text: string): React.ReactElement 
 
   // If no colon found, return the original text
   return React.createElement(React.Fragment, null, text)
+}
+
+/**
+ * Copies the email address from portfolioData to the clipboard
+ */
+export const handleCopyEmail = () => {
+  navigator.clipboard.writeText(portfolioData.hero.email)
+  toast.success('Email copied to clipboard!')
 }
