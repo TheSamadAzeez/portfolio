@@ -67,7 +67,7 @@ export default function Footer() {
           className="text-muted-foreground text-sm italic"
         >
           Copyright © {new Date().getFullYear()}. All rights are reserved{' '}
-          <span className="dark:text-white">| Samad Azeez</span>
+          <span className="text-neutral-800 dark:text-white">| Samad Azeez</span>
         </motion.p>
       </div>
     </motion.section>
