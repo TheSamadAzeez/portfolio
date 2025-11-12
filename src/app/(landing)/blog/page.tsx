@@ -170,7 +170,7 @@ export default function BlogPage() {
         className="relative z-10 container mx-auto px-4 py-16"
         initial={{ opacity: 0, y: 30, scale: 0.9 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
       >
         {/* Hero Section */}
         <div className="mx-auto mb-20 max-w-4xl text-center">
