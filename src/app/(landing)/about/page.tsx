@@ -93,9 +93,11 @@ export default function About() {
                 <IconDownload className="h-4 w-4" />
                 Download Resume
               </Button>
-              <Button variant="outline" className="gap-2">
-                <IconBriefcase className="h-4 w-4" />
-                View My Work
+              <Button variant="outline" className="gap-2" asChild>
+                <Link href="/projects">
+                  <IconBriefcase className="h-4 w-4" />
+                  View My Work
+                </Link>
               </Button>
             </motion.div>
           </motion.div>
