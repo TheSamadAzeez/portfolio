@@ -168,8 +168,8 @@ export default function BlogPage() {
 
       <motion.div
         className="relative z-10 container mx-auto px-4 py-16"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 30, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.6 }}
       >
         {/* Hero Section */}

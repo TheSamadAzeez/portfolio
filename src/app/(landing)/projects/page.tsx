@@ -11,8 +11,8 @@ export default function Projects() {
       <div className="mx-auto px-4 pt-20">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 45, scale: 0.8 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
+          initial={{ opacity: 0, y: 45 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-16 text-center"
         >
