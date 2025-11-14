@@ -41,12 +41,10 @@ export const metadata: Metadata = {
     'Lagos Nigeria Developer',
     'Samad Azeez',
   ],
-  authors: [{ name: 'Samad Azeez', url: 'https://thesamadazeez.com' }],
   creator: 'Samad Azeez',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://thesamadazeez.com',
     siteName: 'Samad Azeez Portfolio',
     title: 'Samad Azeez - Full-Stack Developer & Software Engineer',
     description:
@@ -59,25 +57,6 @@ export const metadata: Metadata = {
         alt: 'Samad Azeez - Full-Stack Developer',
       },
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Samad Azeez - Full-Stack Developer & Software Engineer',
-    description:
-      'Seasoned full-stack developer with 4+ years of experience building scalable web applications, mobile apps, and robust backend systems.',
-    images: ['/images/profile-image.jpg'],
-    creator: '@thesamadazeez',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
 }
 
