@@ -44,3 +44,13 @@ export const handleCopyEmail = () => {
   navigator.clipboard.writeText(portfolioData.hero.email)
   toast.success('Email copied to clipboard!')
 }
+
+/** Initiates download of the resume PDF from the public directory
+ */
+export const downloadResume = () => {
+  const link = document.createElement('a')
+  link.href = '/resume.pdf'
+  link.download = 'Samad-Azeez-Resume.pdf' // optional custom filename
+  link.click()
+  toast.success('Downloading Resume...')
+}
