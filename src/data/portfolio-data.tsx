@@ -210,6 +210,7 @@ export const portfolioData = {
         'Zustand',
         'Socket.IO',
         'Paystack',
+        'AWS',
       ],
       category: 'Delivery Platform',
       featured: true,
@@ -308,41 +309,57 @@ export const portfolioData = {
       ),
       date: '2025',
     },
+    {
+      id: 'segam-mobile-services',
+      title: 'Segam Mobile Services (SMS)',
+      description:
+        'Segam Mobile Services (SMS) is an integrated fintech, edutech, and logistics platform built for Nigerian campuses, enabling seamless POS transactions, academic resource access, and on-demand delivery services.',
+      longDescription:
+        'Segam Mobile Services (SMS) is a comprehensive digital platform designed to support the everyday needs of Nigerian students by combining financial services, educational tools, and logistics solutions in one system. Students can access mobile POS payments, bill settlements, digital course materials, past questions, and reliable dispatch services both within and outside campus. With real-time tracking, optimized routes, and a stable technical architecture, SMS enhances convenience while powering thousands of daily transactions.',
+      image: '/images/projects/sms.jpeg',
+      technologies: [
+        'React Native',
+        'TypeScript',
+        'TailwindCSS',
+        'Express.js',
+        'Prisma',
+        'PostgreSQL',
+        'WebSocket',
+        'Stripe',
+        'AWS',
+      ],
+      category: 'Fintech • EduTech • Logistics',
+      featured: false,
+      githubUrl: 'https://github.com/TheSamadAzeez/segam-mobile-services',
+      liveUrl: 'https://segamservices.com',
+      content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          <Image
+            src="/images/projects/sms.jpeg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="Segam Mobile Services"
+          />
+        </div>
+      ),
+      date: '2025',
+    },
   ],
   testimonials: [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: 'Sarah Chen',
-      designation: 'Product Manager at TechFlow',
-      src: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'What stands out most about Samad is his sense of ownership. He quickly understands the bigger picture, makes thoughtful technical decisions, and implements solutions with confidence — all without compromising code quality.',
+      name: 'Sherifdeen Adebayo',
+      designation: 'Senior Software Engineer at EnerDeFi',
+      src: '/images/testimonials/sherifdeen-adebayo.jpeg',
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: 'Michael Rodriguez',
-      designation: 'CTO at InnovateSphere',
-      src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: 'Emily Watson',
-      designation: 'Operations Director at CloudScale',
-      src: 'https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      quote: "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: 'James Kim',
-      designation: 'Engineering Lead at DataPro',
-      src: 'https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    },
-    {
-      quote:
-        'The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.',
-      name: 'Lisa Thompson',
-      designation: 'VP of Technology at FutureNet',
-      src: 'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'Samad brings a calm, methodical approach to engineering challenges. He asks the right questions, builds with intention, and consistently delivers solutions that integrate seamlessly with complex backend systems. He’s one of the few developers I trust to get things right the first time.',
+      name: 'Solomon Yusuf',
+      designation: 'Backend Developer at NIRA',
+      src: '/images/testimonials/solomon-yusuf.jpeg',
     },
   ],
   aboutPage: {
@@ -641,6 +658,7 @@ export const projectDetailsData: ProjectDetails[] = [
       'Zustand',
       'Socket.IO',
       'Paystack',
+      'AWS',
     ],
     websiteUrl: 'https://vigoride.net',
     image: '/images/projects/vigoride.png',
@@ -807,6 +825,60 @@ export const projectDetailsData: ProjectDetails[] = [
         'Implemented sensitive complaint routing for confidential case handling',
         'Improved institutional response efficiency and student trust',
         'Created a scalable model adaptable for other educational institutions',
+      ],
+    },
+  },
+  {
+    id: 'segam-mobile-services',
+    title: 'Segam Mobile Services (SMS)',
+    subtitle: 'Fintech, EduTech, and Logistics Platform for Nigerian Campuses',
+    description:
+      'Segam Mobile Services (SMS) is a comprehensive campus-focused platform delivering mobile financial services, academic resources, and logistics solutions to students across Nigerian higher institutions. The platform streamlines POS transactions, educational access, and both internal and external delivery services into one unified system.',
+    technologies: [
+      'React Native',
+      'TypeScript',
+      'TailwindCSS',
+      'Express.js',
+      'Prisma',
+      'PostgreSQL',
+      'WebSocket',
+      'Stripe',
+      'AWS',
+    ],
+    websiteUrl: 'https://segamservices.com',
+    image: '/images/projects/sms.jpeg',
+    keyFeatures: [
+      'Mobile Financial Services: POS transactions, P2P transfers, bill payments, and campus-based payments',
+      'Educational Resources: Access to digital course materials, past questions, and student academic tools',
+      'Logistics & Delivery: Real-time tracking, internal campus dispatch, and external P2P deliveries',
+      'Product Enhancements: Digital coupons, video ad integration, student package delivery, food ordering',
+      'Real-Time Communication: Live tracking and updates powered by WebSocket and Socket.IO',
+    ],
+    businessModel: {
+      title: 'Business Model',
+      description: 'Segam Mobile Services operates on three major service pillars:',
+      pillars: [
+        'Fintech Services: Mobile POS operations, transfers, bill payments, and transaction processing',
+        'EduTech Services: Digital learning support through academic materials and student resources',
+        'Logistics & Dispatch: Internal and external deliveries with real-time tracking and route optimization',
+      ],
+    },
+    targetMarket: [
+      'Undergraduate and postgraduate students in Nigerian campuses',
+      'Schools and faculties needing digital distribution of academic materials',
+      'Campus vendors requiring reliable POS and financial tools',
+      'Students and staff needing fast, reliable dispatch and delivery services',
+    ],
+    mission:
+      'Our mission is to empower Nigerian students with seamless access to financial services, academic resources, and reliable logistics within a single platform. SMS bridges fintech, edutech, and delivery services to enhance everyday campus life.',
+    results: {
+      title: 'Results',
+      achievements: [
+        'Over 50,000 active student users across multiple campuses',
+        '₦10M+ monthly transaction volume',
+        '95% delivery success rate with real-time route optimization',
+        '4.8/5 user satisfaction rating from daily campus users',
+        '99.5% transaction success rate and 200ms average response time',
       ],
     },
   },
