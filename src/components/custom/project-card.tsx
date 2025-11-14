@@ -5,6 +5,7 @@ import { IconExternalLink } from '@tabler/icons-react'
 import { Card, CardContent } from '../ui/card'
 import Link from 'next/link'
 import { motion } from 'motion/react'
+import Image from 'next/image'
 
 export default function ProjectCard({ project, index }: { project: any; index: number }) {
   return (
@@ -20,15 +21,18 @@ export default function ProjectCard({ project, index }: { project: any; index: n
             <div
               className={cn(
                 'card relative flex h-65 w-full flex-col justify-end overflow-hidden rounded-md rounded-b-none border border-transparent dark:border-neutral-800',
-                'bg-cover bg-center bg-no-repeat',
-                // Preload hover image by setting it in a pseudo-element
-                'before:fixed before:inset-0 before:z-[-1] before:opacity-0',
                 'transition-all duration-500 ease-in-out',
               )}
-              style={{
-                backgroundImage: `url(${project.image})`,
-              }}
-            />
+            >
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover object-center"
+                priority={index < 2} // Prioritize loading for the first 2 cards
+              />
+            </div>
             {/* Project Info */}
             <div className="px-3">
               <h3 className="text-lg font-bold">{project.title}</h3>
