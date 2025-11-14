@@ -64,7 +64,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
-          className="text-muted-foreground text-sm italic"
+          className="text-muted-foreground text-center text-sm italic"
         >
           Copyright © {new Date().getFullYear()}. All rights are reserved{' '}
           <span className="text-neutral-800 dark:text-white">| Samad Azeez</span>
