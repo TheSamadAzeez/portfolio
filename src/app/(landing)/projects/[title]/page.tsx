@@ -8,11 +8,61 @@ import { Card, CardContent } from '@/components/ui/card'
 import { formatTextWithBoldBeforeColon } from '../../../../lib/utils'
 import Image from 'next/image'
 import { projectDetailsData } from '../../../../data/portfolio-data'
+import { Metadata } from 'next'
 
 interface ProjectDetailsProps {
   params: Promise<{
     title: string
   }>
+}
+
+export async function generateMetadata({ params }: ProjectDetailsProps): Promise<Metadata> {
+  const { title } = await params
+
+  // Find project in the portfolio data with flexible matching
+  const normalizedTitle = title.toLowerCase().replace(/\s+/g, '').replace(/-/g, '')
+  const project = projectDetailsData.find((p: ProjectDetails) => {
+    const normalizedId = p.title.toLowerCase().replace(/\s+/g, '').replace(/-/g, '')
+    return normalizedId === normalizedTitle
+  })
+
+  if (!project) {
+    return {
+      title: 'Project Not Found',
+      description: 'The requested project could not be found.',
+    }
+  }
+
+  return {
+    title: `${project.title}`,
+    description: project.description,
+    keywords: [
+      project.title,
+      'Samad Azeez Projects',
+      'Full Stack Development',
+      ...project.technologies,
+      'Software Engineering',
+      'Portfolio Project',
+    ],
+    openGraph: {
+      title: `${project.title} - Samad Azeez`,
+      description: project.description,
+      images: [
+        {
+          url: project.image || '/images/profile-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: `${project.title} - Project by Samad Azeez`,
+        },
+      ],
+      url: `/projects/${title}`,
+    },
+    twitter: {
+      title: `${project.title} - Samad Azeez`,
+      description: project.description,
+      images: [project.image || '/images/profile-image.jpg'],
+    },
+  }
 }
 
 export default async function ProjectDetailsPage({ params }: ProjectDetailsProps) {
