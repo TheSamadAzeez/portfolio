@@ -12,7 +12,7 @@ import { downloadResume, handleCopyEmail } from '@/lib/utils'
 
 export default function About() {
   return (
-    <section className="container mx-auto h-screen">
+    <section className="container mx-auto">
       {/* Hero Section */}
       <div className="mx-auto px-4 pt-20" id="about">
         <div className="flex flex-col-reverse items-center justify-between gap-12 lg:flex-row">
