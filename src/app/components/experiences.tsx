@@ -3,9 +3,10 @@
 import React, { useEffect, useId, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useOutsideClick } from '@/hooks/use-outside-click'
-import Image from 'next/image'
 import { IconChevronRight } from '@tabler/icons-react'
+import { AvatarInitial } from '@/components/ui/avatar-initial'
 import { portfolioData } from '../../data/portfolio-data'
+import Image from 'next/image'
 
 const cards = portfolioData.experiences
 
@@ -85,13 +86,16 @@ export default function Experiences() {
               className="flex h-fit max-h-[90%] w-full max-w-[500px] flex-col overflow-hidden rounded-3xl bg-white dark:bg-neutral-900"
             >
               <motion.div layoutId={`image-${active.id}-${id}`}>
-                <Image
-                  width={200}
-                  height={200}
-                  src={active.src}
-                  alt={active.company}
-                  className="h-80 w-full object-cover object-top sm:rounded-tl-lg sm:rounded-tr-lg lg:h-80"
-                />
+                {active.logo ? (
+                  <div className="relative h-80 w-full overflow-hidden sm:rounded-tl-lg sm:rounded-tr-lg lg:h-80">
+                    <Image src={active.logo} alt={`${active.company} logo`} fill className="object-contain p-8" />
+                  </div>
+                ) : (
+                  <AvatarInitial
+                    name={active.company}
+                    className="h-80 w-full text-8xl sm:rounded-tl-lg sm:rounded-tr-lg lg:h-80"
+                  />
+                )}
               </motion.div>
 
               <div>
@@ -145,13 +149,18 @@ export default function Experiences() {
           >
             <div className="flex flex-row items-center justify-center gap-4">
               <motion.div layoutId={`image-${card.id}-${id}`}>
-                <Image
-                  width={100}
-                  height={100}
-                  src={card.src}
-                  alt={card.company}
-                  className="h-9 w-9 rounded-lg object-cover object-top md:h-14 md:w-14"
-                />
+                {card.logo ? (
+                  <div className="relative h-9 w-9 overflow-hidden rounded-lg md:h-14 md:w-14">
+                    <Image
+                      src={card.logo}
+                      alt={`${card.company} logo`}
+                      fill
+                      className="rounded-lg object-contain p-1"
+                    />
+                  </div>
+                ) : (
+                  <AvatarInitial name={card.company} className="h-9 w-9 rounded-lg md:h-14 md:w-14" />
+                )}
               </motion.div>
               <div className="">
                 <motion.h3
