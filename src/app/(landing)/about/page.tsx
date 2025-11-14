@@ -8,7 +8,7 @@ import { motion } from 'motion/react'
 import { IconCopy, IconDownload, IconBriefcase } from '@tabler/icons-react'
 import Footer from '@/app/components/footer'
 import Link from 'next/link'
-import { handleCopyEmail } from '@/lib/utils'
+import { downloadResume, handleCopyEmail } from '@/lib/utils'
 
 export default function About() {
   return (
@@ -89,7 +89,7 @@ export default function About() {
                 <IconCopy className="h-4 w-4" />
                 Copy email
               </Button>
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2" onClick={downloadResume}>
                 <IconDownload className="h-4 w-4" />
                 Download Resume
               </Button>
@@ -285,7 +285,7 @@ export default function About() {
               <IconCopy className="h-5 w-5" />
               Copy email
             </Button>
-            <Button size="lg" variant="outline" className="gap-2">
+            <Button size="lg" variant="outline" className="gap-2" onClick={downloadResume}>
               <IconDownload className="h-5 w-5" />
               Download Resume
             </Button>

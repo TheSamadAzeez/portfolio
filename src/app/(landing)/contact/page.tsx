@@ -7,7 +7,7 @@ import { Briefcase, Code, Globe, Lightbulb, Mail, MessageCircle, Palette, Rocket
 import { motion } from 'motion/react'
 import { portfolioData } from '@/data/portfolio-data'
 import Link from 'next/link'
-import { handleCopyEmail } from '@/lib/utils'
+import { downloadResume, handleCopyEmail } from '@/lib/utils'
 import { LinkPreview } from '@/components/ui/link-preview'
 
 export default function ContactPage() {
@@ -367,7 +367,13 @@ export default function ContactPage() {
             return (
               <Button
                 key={index}
-                onClick={button.action === 'copyEmail' ? handleCopyEmail : undefined}
+                onClick={
+                  button.action === 'copyEmail'
+                    ? handleCopyEmail
+                    : button.action === 'downloadResume'
+                      ? downloadResume
+                      : undefined
+                }
                 variant={button.variant as 'default' | 'outline' | undefined}
                 size={button.size as 'default' | 'lg' | undefined}
               >
