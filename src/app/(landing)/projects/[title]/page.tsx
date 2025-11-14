@@ -50,7 +50,7 @@ export default async function ProjectDetailsPage({ params }: ProjectDetailsProps
         {/* Back Navigation */}
         <Link
           href="/projects"
-          className="text-muted-foreground group inline-flex w-fit items-center gap-2 pt-20 text-sm transition-transform duration-300 hover:scale-105 hover:text-white"
+          className="text-muted-foreground group inline-flex w-fit items-center gap-2 pt-20 text-sm transition-transform duration-300 hover:scale-105 hover:text-black dark:hover:text-white"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to Projects
