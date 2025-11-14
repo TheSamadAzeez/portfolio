@@ -21,81 +21,57 @@ export const portfolioData = {
   experiences: [
     {
       id: '1',
-      company: 'Lana Del Rey',
-      role: 'Frontend Developer',
-      src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-      start: 'January 2010',
-      end: 'December 2015',
+      company: 'VigoRide',
+      role: 'Software Engineer',
+      start: 'Jan 2025',
+      end: 'Present',
+      logo: '/images/logos/vigoride-logo.png',
       content: () => {
         return (
-          <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-            style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-            haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-            glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-            that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-            influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-          </p>
+          <div>
+            <p className=" ">
+              Built and optimized core features for a high-performance delivery platform at a fast-growing Nigerian tech
+              startup. Developed instant booking, live tracking, and payment systems supporting thousands of daily
+              transactions.
+            </p>
+          </div>
         )
       },
     },
     {
       id: '2',
-      company: 'Lana Del Rey',
+      company: 'KeenzChillz',
       role: 'Frontend Developer',
-      src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-      start: 'January 2010',
-      end: 'December 2015',
+      start: 'Feb 2024',
+      end: 'Jun 2024',
+      // logo: '/images/logos/keenzchillz-logo.png',
       content: () => {
         return (
-          <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-            style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-            haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-            glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-            that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-            influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-          </p>
+          <div>
+            <p className="">
+              Built intuitive, responsive user interfaces for a digital property rental platform. Focused on enhancing
+              booking and property management experiences with high-performing frontend solutions.
+            </p>
+          </div>
         )
       },
     },
     {
       id: '3',
-      company: 'Lana Del Rey',
-      role: 'Frontend Developer',
-      src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-      start: 'January 2010',
-      end: 'December 2015',
+      company: 'Segam Mobile Services',
+      role: 'Software Engineer',
+      start: 'May 2023',
+      end: 'Sep 2024',
+      // logo: '/images/logos/segam-logo.png',
       content: () => {
         return (
-          <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-            style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-            haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-            glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-            that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-            influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-          </p>
-        )
-      },
-    },
-    {
-      id: '4',
-      company: 'Lana Del Rey',
-      role: 'Frontend Developer',
-      src: 'https://assets.aceternity.com/demos/lana-del-rey.jpeg',
-      start: 'January 2010',
-      end: 'December 2015',
-      content: () => {
-        return (
-          <p>
-            Lana Del Rey, an iconic American singer-songwriter, is celebrated for her melancholic and cinematic music
-            style. Born Elizabeth Woolridge Grant in New York City, she has captivated audiences worldwide with her
-            haunting voice and introspective lyrics. <br /> <br /> Her songs often explore themes of tragic romance,
-            glamour, and melancholia, drawing inspiration from both contemporary and vintage pop culture. With a career
-            that has seen numerous critically acclaimed albums, Lana Del Rey has established herself as a unique and
-            influential figure in the music industry, earning a dedicated fan base and numerous accolades.
-          </p>
+          <div>
+            <p className="">
+              Contributed to building and optimizing the SMS platform, Implemented responsive user interfaces, managed
+              data with Prisma and PostgreSQL, and enhanced performance for seamless campus-based transactions and
+              resource access.
+            </p>
+          </div>
         )
       },
     },
@@ -106,16 +82,14 @@ export const portfolioData = {
       institution: 'Lagos State University',
       degree: "Bachelor's Degree of Computer Science (BCS)",
       field: 'Computer Science',
-      src: '/images/lasu-logo.png', // You'll need to add your university logo
+      src: '/images/logos/lasu-logo.jpeg',
       start: '2021',
       end: '2025',
       content: () => {
         return (
           <p>
-            Pursuing a comprehensive education in Computer Science with focus on software engineering, algorithms, data
-            structures, and modern web technologies. <br /> <br /> Developed strong foundation in programming, database
-            management, and system design while working on various academic and personal projects that enhanced
-            practical skills in full-stack development.
+            Completed a comprehensive degree in Computer Science with a strong foundation in software engineering and
+            full-stack development.
           </p>
         )
       },
@@ -193,12 +167,12 @@ export const portfolioData = {
       description: 'Family-oriented property management business offering serviced accommodations across the UK.',
       longDescription:
         'KeenzChillz is a family-oriented property management business offering serviced accommodations across the UK. The platform provides comfortable, convenient, and memorable stays for both business and leisure travelers, with a focus on creating a home away from home experience.',
-      image: '/images/keenzchillz-project.jpg',
-      technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Prisma', 'PostgreSQL', 'Stripe'],
+      image: '/images/projects/keenzchillz.jpeg',
+      technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Drizzle', 'PostgreSQL', 'Stripe'],
       category: 'Business Platform',
       featured: true,
       githubUrl: 'https://github.com/thesamadazeez/keenzchillz',
-      liveUrl: 'https://keenzchillz.com',
+      liveUrl: 'https://v2.keenzchillz.properties/',
       highlights: [
         'Family-focused accommodations from studios to multi-bedroom suites',
         'Strategic locations near business districts and tourist attractions',
@@ -208,126 +182,131 @@ export const portfolioData = {
       ],
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
-          <Image src="/linear.webp" width={300} height={300} className="h-full w-full object-cover" alt="KeenzChillz" />
-        </div>
-      ),
-      date: '2024',
-    },
-    {
-      id: 'tride',
-      title: 'Tride',
-      description:
-        "Africa's No 1 Online Bank for Churches and Ministries - helping religious organizations receive funds faster.",
-      longDescription:
-        'Tride helps religious organizations receive funds faster from members and donors with dedicated bank accounts and online payment options. The platform enables quick account opening in 10 minutes without paperwork and provides comprehensive digital financial management solutions.',
-      image: '/images/tride-project.jpg',
-      technologies: [
-        'Next.js',
-        'TypeScript',
-        'PostgreSQL',
-        'Prisma',
-        'TailwindCSS',
-        'Stripe',
-        'GTBank API',
-        'Flutterwave',
-      ],
-      category: 'FinTech',
-      featured: true,
-      githubUrl: 'https://github.com/thesamadazeez/tride',
-      liveUrl: 'https://tride.ng',
-      highlights: [
-        'Quick account opening in 10 minutes without paperwork',
-        'Multi-signatory support with digital management',
-        'Automated transaction monitoring and reversal system',
-        'Multiple bank accounts support per organization',
-        'Custom payment pages for donations and offerings',
-        'CBN-licensed and NDIC-insured banking services',
-      ],
-      content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-          <Image src="/linear.webp" width={300} height={300} className="h-full w-full object-cover" alt="Tride" />
-        </div>
-      ),
-      date: '2024',
-    },
-    {
-      id: 'yours-journaly',
-      title: 'Yours Journaly',
-      description:
-        'Voice-first journaling app designed for women, transforming spoken thoughts into organized reflections.',
-      longDescription:
-        'Yours Journaly is a voice-first journaling app designed for women, transforming spoken thoughts into organized reflections while providing AI-powered mood insights and guided prompts for personal growth and emotional well-being.',
-      image: '/images/yours-journaly-project.jpg',
-      technologies: [
-        'React Native',
-        'TypeScript',
-        'Redux',
-        'Node.js',
-        'MongoDB',
-        'Google Cloud Speech-to-Text',
-        'Azure AI',
-      ],
-      category: 'Mobile App',
-      featured: true,
-      githubUrl: 'https://github.com/thesamadazeez/yours-journaly',
-      liveUrl: 'https://yoursjourally.com',
-      highlights: [
-        'Real-time voice-to-text conversion with 98% accuracy',
-        'Multi-language support with context-aware text correction',
-        'End-to-end encryption with biometric authentication',
-        'AI-powered sentiment analysis and pattern recognition',
-        'Personalized prompts and weekly insight generation',
-        '100K+ downloads with 82% user retention rate',
-      ],
-      content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
           <Image
-            src="/linear.webp"
+            src="/images/projects/keenzchillz.jpeg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="Yours Journaly"
+            alt="KeenzChillz"
           />
         </div>
       ),
       date: '2024',
     },
     {
-      id: 'chowgoo',
-      title: 'Chowgoo',
+      id: 'vigoride',
+      title: 'Vigoride',
       description:
-        'Modern food delivery platform connecting local restaurants with customers using ML-optimized delivery.',
+        "Nigeria's fastest and most reliable delivery service - trusted by thousands of businesses and shoppers for 98% on-time deliveries and peace of mind.",
       longDescription:
-        'Chowgoo is a modern food delivery platform that connects local restaurants with hungry customers. The platform leverages machine learning for optimized delivery times and provides real-time order tracking, creating a seamless experience for both customers and restaurant partners.',
-      image: '/images/chowgoo-project.jpg',
+        "Vigoride is Nigeria's fastest and most reliable delivery service - trusted by thousands of businesses and shoppers for 98% on-time deliveries and peace of mind.",
+      image: '/images/projects/vigoride.png',
       technologies: [
-        'React.js',
-        'Next.js',
+        'React Native',
+        'NestJS',
         'TypeScript',
-        'Node.js',
-        'MongoDB',
+        'PostgreSQL',
         'TailwindCSS',
+        'Zustand',
         'Socket.IO',
-        'Machine Learning',
+        'Paystack',
       ],
-      category: 'Food Delivery',
-      featured: false,
-      githubUrl: 'https://github.com/thesamadazeez/chowgoo',
-      liveUrl: 'https://chowgoo.com',
-      highlights: [
-        'ML-powered delivery time prediction with high accuracy',
-        'Real-time order tracking using Socket.IO',
-        'Restaurant partner dashboard for order management',
-        'Integrated payment gateway with multiple options',
-        'Admin dashboard with comprehensive analytics',
-        'Average page load time of 1.2s with 78% user retention',
-      ],
+      category: 'Delivery Platform',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/vigoride',
+      liveUrl: 'https://vigoride.vercel.app/',
+
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
-          <Image src="/linear.webp" width={300} height={300} className="h-full w-full object-cover" alt="Chowgoo" />
+          <Image
+            src="/images/projects/vigoride.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="vigoride"
+          />
         </div>
       ),
       date: '2024',
+    },
+    {
+      id: 'spotify-clone',
+      title: 'Spotify Clone',
+      description:
+        'A web-based music streaming platform that allows users to listen to their favorite songs and discover new music.',
+      longDescription:
+        'Spotify Clone is a web-based music streaming platform that allows users to listen to their favorite songs and discover new music.',
+      image: '/images/projects/spotify.png',
+      technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', 'Prisma', 'Stripe'],
+      category: 'Mobile App',
+      featured: true,
+      githubUrl: 'https://github.com/thesamadazeez/spotify-clone',
+      liveUrl: 'https://spotify-react-web-client.onrender.com/',
+
+      content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          <Image
+            src="/images/projects/spotify.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="Spotify Clone"
+          />
+        </div>
+      ),
+      date: '2024',
+    },
+    {
+      id: 'upfit',
+      title: 'Upfit',
+      description:
+        'Upfit is an AI-powered fitness app that helps users plan and track workouts in real time. It offers smart exercise logging, progress tracking, and AI-generated instructions that guide users on how to perform each exercise safely and effectively.',
+      longDescription:
+        'Upfit is an intelligent fitness companion that helps users plan, track, and improve their workouts using artificial intelligence. The app allows users to log exercises, monitor progress, and receive AI-generated step-by-step guidance on how to perform each exercise safely and effectively — all within a beautifully designed, mobile-first experience.',
+      image: '/images/projects/upfit.png',
+      technologies: ['React Native', 'TypeScript', 'TailwindCSS', 'NativeWind', 'Sanity', 'Gemini API', 'SQLite'],
+      category: 'Fitness App',
+      featured: false,
+      githubUrl: 'https://github.com/TheSamadAzeez/AI-fitness-app',
+      liveUrl: 'https://github.com/TheSamadAzeez/AI-fitness-app',
+      content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          <Image
+            src="/images/projects/upfit.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="Upfit"
+          />
+        </div>
+      ),
+      date: '2024',
+    },
+    {
+      id: 'campus-voice',
+      title: 'Campus Voice',
+      description:
+        'Campus Voice is a multi-level complaint management platform that empowers students to report issues and track resolutions while ensuring sensitive cases like harassment are securely routed to top-level administrators.',
+      longDescription:
+        'Campus Voice is a digital platform designed to simplify and modernize how students report issues and institutions handle feedback. It enables students to submit complaints, track responses, and communicate directly with department administrators — while routing sensitive matters like harassment to top-level authorities for confidential handling.',
+      image: '/images/projects/campus-voice.png',
+      technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Prisma', 'PostgreSQL', 'Clerk'],
+      category: 'Fitness App',
+      featured: false,
+      githubUrl: 'https://github.com/TheSamadAzeez/campus-voice',
+      liveUrl: 'https://github.com/TheSamadAzeez/campus-voice',
+      content: (
+        <div className="flex h-full w-full items-center justify-center text-white">
+          <Image
+            src="/images/projects/campus-voice.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="Campus Voice"
+          />
+        </div>
+      ),
+      date: '2025',
     },
   ],
   testimonials: [
@@ -610,9 +589,9 @@ export const projectDetailsData: ProjectDetails[] = [
     subtitle: 'Family-Oriented Property Management Business',
     description:
       'KeenzChillz is a family-oriented property management business offering serviced accommodations across the UK. The platform provides comfortable, convenient, and memorable stays for both business and leisure travelers, with a focus on creating a home away from home experience.',
-    technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'ShadCN', 'Prisma', 'PostgreSQL', 'Stripe'],
+    technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'ShadCN', 'Drizzle', 'PostgreSQL', 'Stripe'],
     websiteUrl: 'https://keenzchillz.com',
-    image: '/projects/',
+    image: '/images/projects/keenzchillz.jpeg',
     keyFeatures: [
       'Family-Focused Accommodations: From cozy studios to spacious multi-bedroom suites',
       'Strategic Locations: Properties situated near business districts and tourist attractions',
@@ -648,207 +627,187 @@ export const projectDetailsData: ProjectDetails[] = [
     },
   },
   {
-    id: 'tride',
-    title: 'Tride',
-    subtitle: "Africa's No 1 Online Bank for Churches and Ministries",
+    id: 'vigoride',
+    title: 'Vigoride',
+    subtitle: "Nigeria's Fastest & Most Reliable Delivery Service",
     description:
-      'Tride helps religious organizations receive funds faster from members and donors with dedicated bank accounts and online payment options.',
+      'Vigoride is a next-generation delivery platform revolutionizing last-mile logistics in Nigeria. Designed for both individuals and businesses, it enables instant booking, real-time tracking, seamless payments, and 24/7 support — delivering packages with unmatched speed, safety, and reliability.',
     technologies: [
-      'Next.js',
+      'React Native',
+      'NestJS',
       'TypeScript',
       'PostgreSQL',
-      'Prisma',
       'TailwindCSS',
-      'Stripe',
-      'GTBank API',
-      'Flutterwave',
+      'Zustand',
+      'Socket.IO',
+      'Paystack',
     ],
-    websiteUrl: 'https://tride.ng',
-    image: '/projects/',
+    websiteUrl: 'https://vigoride.net',
+    image: '/images/projects/vigoride.png',
     keyFeatures: [
-      'Quick Account Opening: Open a bank account in 10 minutes without paperwork',
-      'Multi-Signatory Support: Digital management of account signatories without bank visits',
-      'Transaction Monitoring: Detailed transaction notifications and status tracking',
-      'Automated Reversals: Automatic reversal of failed transactions',
-      'Multiple Accounts: Support for multiple bank accounts per organization',
-      'Payment Pages: Custom payment solutions for donations and offerings',
+      'Instant Booking: Schedule deliveries in under a minute with a smart booking system',
+      'Real-Time Tracking: Follow your package live with GPS updates and delivery notifications',
+      'Seamless Payments: Secure, transparent payments with multiple trusted methods',
+      '24/7 Support: Round-the-clock assistance via in-app chat, phone, and email',
+      'Multi-Vehicle Options: Choose between bike, car, or van for flexible delivery needs',
     ],
-    technicalImplementation: {
-      title: 'Technical Implementation',
-      description: 'The platform leverages enterprise-grade financial infrastructure:',
-      architecture: {
-        frontend: ['Next.js with TypeScript for a secure and responsive interface'],
-        backend: [
-          "Direct integration with GTBank's banking infrastructure",
-          'Partnerships with Anchor & Flutterwave for secure transactions',
-        ],
-        cloud: [
-          'NDIC-insured funds and CBN-compliant processes',
-          'Real-time email notification system for transactions',
-        ],
-        mobile: ['Secure PostgreSQL database with Prisma ORM'],
-      },
-    },
-    developmentJourney: {
-      title: 'Development Journey',
+    businessModel: {
+      title: 'Business Model',
       description:
-        'Founded by Isaiah and Jeremiah, two computer engineers who met in a university fellowship, Tride was born from firsthand experience with church financial management challenges. The platform was developed to solve the common problem of churches and ministries struggling to obtain and manage dedicated bank accounts.',
-      founders: ['Isaiah', 'Jeremiah'],
+        'VIGORIDE connects senders, riders, and businesses through a unified logistics platform built for speed and reliability.',
+      pillars: [
+        'Customer Platform: Enables individuals and businesses to request, pay for, and track deliveries',
+        'Rider App: Empowers verified riders to accept requests, navigate routes, and earn income flexibly',
+        'Enterprise Solutions: Provides businesses with scalable delivery APIs and management dashboards',
+      ],
     },
-    impact: {
-      title: 'Impact',
+    targetMarket: [
+      'Small and medium-sized businesses needing reliable delivery logistics',
+      'E-commerce stores seeking fast order fulfillment',
+      'Individuals requiring on-demand delivery services',
+      'Riders and drivers looking for income opportunities through flexible work',
+    ],
+    mission:
+      'To simplify and accelerate last-mile delivery in Nigeria through technology and innovation — empowering individuals, businesses, and riders with a smarter, more connected logistics experience.',
+    results: {
+      title: 'Results',
       achievements: [
-        'Simplified bank account opening for religious organizations',
-        'Enabled digital financial management for churches',
-        'Provided secure, CBN-licensed banking services',
-        'Created a more efficient donation collection system',
-        'Partnered with major financial institutions like GTBank',
+        'Achieved 98% on-time delivery rate across major Nigerian cities',
+        'Grew to 600+ registered waitlist users pre-launch',
+        'Built dual apps for senders and riders with real-time tracking and notifications',
+        'Established strong trust through transparency, reliability, and insured deliveries',
+      ],
+    },
+  },
+
+  {
+    id: 'spotify-clone',
+    title: 'Spotify Clone',
+    subtitle: 'Full-Stack Music Streaming Platform',
+    description:
+      'A modern Spotify-inspired music streaming web app that lets users explore, play, and manage their favorite songs and playlists. The platform delivers a smooth, real-time audio experience with dynamic UI components, user authentication, and music playback controls — all built to replicate Spotify’s sleek interface and seamless performance.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', 'Prisma', 'Stripe'],
+    websiteUrl: 'https://spotify-react-web-client.onrender.com/',
+    image: '/images/projects/spotify.png',
+    keyFeatures: [
+      'Music Streaming: Play songs instantly with smooth audio playback and progress tracking',
+      'User Authentication: Secure sign-up and login using Supabase authentication',
+      'Playlist Management: Create, edit, and manage personal playlists with ease',
+      'Dynamic UI: Responsive, Spotify-like interface built with TailwindCSS and ShadCN components',
+      'Premium Access: Stripe integration for subscription-based premium features',
+    ],
+    businessModel: {
+      title: 'Business Model',
+      description: 'The platform follows a freemium model similar to Spotify’s approach:',
+      pillars: [
+        'Free Tier: Stream music with limited features and ads',
+        'Premium Subscription: Unlocks ad-free listening and offline playback',
+        'Artist Support: Option for independent artists to upload and monetize their music',
+      ],
+    },
+    targetMarket: [
+      'Music lovers seeking a free and responsive online music experience',
+      'Developers exploring modern full-stack application design',
+      'Independent artists looking to share their songs online',
+      'Students learning about real-time media streaming and authentication',
+    ],
+    mission:
+      'To replicate and understand the architecture of large-scale streaming platforms like Spotify while building a polished, responsive, and fully functional full-stack web application.',
+    results: {
+      title: 'Results',
+      achievements: [
+        'Built a complete music streaming platform using modern web technologies',
+        'Implemented real-time playback with dynamic UI updates',
+        'Integrated secure authentication and payments via Supabase and Stripe',
+        'Optimized performance and scalability with server-side rendering and database indexing',
       ],
     },
   },
   {
-    id: 'yours-journaly',
-    title: 'Yours Journaly',
-    subtitle: 'Voice-First Journaling App for Women',
+    id: 'upfit',
+    title: 'Upfit',
+    subtitle: 'AI-Powered Fitness & Workout Tracking App',
     description:
-      'Yours Journaly is a voice-first journaling app designed for women, transforming spoken thoughts into organized reflections while providing AI-powered mood insights and guided prompts for personal growth and emotional well-being.',
-    technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Prisma', 'PostgreSQL', 'Stripe'],
-    websiteUrl: 'https://yoursjourally.com',
-    image: '/projects/',
-    technicalImplementation: {
-      title: 'Technical Architecture',
-      description:
-        'The platform leverages modern voice processing and AI technologies to provide a seamless journaling experience.',
-      architecture: {
-        frontend: [
-          'React Native with TypeScript',
-          'Redux for state management',
-          'Custom voice recording module',
-          'Local encryption system',
-        ],
-        backend: [
-          'Node.js/Express.js',
-          'MongoDB Atlas',
-          'Google Cloud Speech-to-Text API',
-          'Azure AI for mood analysis',
-        ],
-        mobile: ['React Native', 'TypeScript', 'Redux', 'SQLite'],
-        cloud: ['AWS', 'Google Cloud', 'Azure AI', 'MongoDB Atlas'],
-      },
-    },
+      'Upfit is an intelligent fitness companion that helps users plan, track, and improve their workouts using artificial intelligence. The app allows users to log exercises, monitor progress, and receive AI-generated step-by-step guidance on how to perform each exercise safely and effectively — all within a beautifully designed, mobile-first experience.',
+    technologies: ['React Native', 'TypeScript', 'TailwindCSS', 'NativeWind', 'Sanity', 'Gemini API', 'SQLite'],
+    websiteUrl: 'https://github.com/TheSamadAzeez/AI-fitness-app',
+    image: '/images/projects/upfit.png',
     keyFeatures: [
-      'Voice Processing: Real-time voice-to-text conversion with background noise reduction',
-      'Multi-language Support: Custom wake word detection and context-aware text correction',
-      'Security: End-to-end encryption with biometric authentication and secure cloud backup',
-      'AI Features: Sentiment analysis, pattern recognition, personalized prompts, and weekly insight generation',
+      'AI Exercise Guidance: Uses Gemini API to generate detailed, personalized instructions for each workout',
+      'Workout Tracking: Add, edit, and monitor exercises with real-time progress updates',
+      'Workout History: Access and analyze past workouts to measure consistency and improvement',
+      'Live Tracking: Track sets, reps, and performance data during active sessions',
+      'Modern UI: Smooth, responsive, and visually engaging interface powered by NativeWind and TailwindCSS',
     ],
-    challenges: {
-      title: 'Technical Challenges',
-      items: [
-        {
-          challenge: 'Voice Recognition Accuracy',
-          solution:
-            'Implemented custom acoustic models, enhanced noise cancellation, and context-aware text correction',
-        },
-        {
-          challenge: 'Privacy Concerns',
-          solution: 'Zero-knowledge encryption, secure key management, GDPR compliance, and anonymous data processing',
-        },
+    businessModel: {
+      title: 'Business Model',
+      description: 'Upfit combines personal fitness tracking with intelligent coaching through AI-generated insights.',
+      pillars: [
+        'Free Access: Core workout tracking features available to all users',
+        'AI Coaching: Premium tier unlocking detailed, AI-driven exercise analysis and recommendations',
+        'Community Growth: Integration with social fitness challenges and progress sharing (in development)',
       ],
     },
-    metrics: {
-      title: 'Performance Metrics',
-      items: [
-        { metric: 'Voice Recognition Accuracy', value: '98%' },
-        { metric: 'Processing Latency', value: '<500ms' },
-        { metric: 'App Store Rating', value: '4.8/5' },
-        { metric: 'Monthly Active Users Growth', value: '45%' },
+    targetMarket: [
+      'Fitness enthusiasts seeking smarter, AI-assisted workout experiences',
+      'Beginners looking for guided exercise routines and form correction',
+      'Mobile users who want an all-in-one fitness tracker and planner',
+      'Developers or students interested in AI applications in health and fitness',
+    ],
+    mission:
+      'To make fitness smarter and more accessible by combining intuitive tracking with AI-driven exercise guidance — helping users train more effectively, safely, and consistently.',
+    results: {
+      title: 'Results',
+      achievements: [
+        'Developed a fully functional AI-powered workout tracking system',
+        'Integrated Gemini API for personalized, real-time exercise instructions',
+        'Implemented Sanity CMS for managing exercises and workout content',
+        'Built an elegant, responsive mobile UI with NativeWind and TailwindCSS',
       ],
     },
-    impact: {
-      title: 'Impact',
-      achievements: ['100K+ downloads', '82% user retention', '92% female user base', '4.7/5 user satisfaction'],
-    },
-    futureDevelopment: [
-      'Group journaling features',
-      'AI-powered therapy insights',
-      'Cross-platform sync',
-      'Voice command expansion',
-    ],
-    conclusion:
-      "Yours Journaly successfully addresses the unique journaling needs of women through innovative voice technology and AI-driven insights. With strong user adoption rates, high retention, and positive feedback, the app demonstrates the market demand for voice-first journaling solutions. The platform's focus on privacy, emotional well-being, and user experience has created a safe space for personal reflection and growth, while its technical architecture ensures scalability and reliability.",
   },
   {
-    id: 'chowgoo',
-    title: 'Chowgoo',
-    subtitle: 'Modern Food Delivery Platform',
+    id: 'campus-voice',
+    title: 'Campus Voice',
+    subtitle: 'Multi-Level Complaint & Feedback Management System for Universities',
     description:
-      'Chowgoo is a modern food delivery platform that connects local restaurants with hungry customers. The platform leverages machine learning for optimized delivery times and provides real-time order tracking, creating a seamless experience for both customers and restaurant partners.',
-    technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Prisma', 'PostgreSQL', 'Stripe'],
-    websiteUrl: 'https://chowgoo.com',
-    image: '/projects/',
-    technicalImplementation: {
-      title: 'Technical Architecture',
-      description:
-        'Developed a full-stack food delivery platform focusing on speed, efficiency, and user experience. The platform incorporates machine learning for delivery optimization and seamless order management.',
-      architecture: {
-        frontend: [
-          'React.js with Next.js for server-side rendering',
-          'Tailwind CSS for responsive design',
-          'Redux for state management',
-          'Material-UI components for consistent UI elements',
-        ],
-        backend: [
-          'Node.js/Express.js RESTful API',
-          'MongoDB for database management',
-          'JWT authentication',
-          'Socket.IO for real-time order tracking',
-        ],
-      },
-    },
+      'Campus Voice is a digital platform designed to simplify and modernize how students report issues and institutions handle feedback. It enables students to submit complaints, track responses, and communicate directly with department administrators — while routing sensitive matters like harassment to top-level authorities for confidential handling.',
+    technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Prisma', 'PostgreSQL', 'Clerk'],
+    websiteUrl: 'https://github.com/TheSamadAzeez/campus-voice',
+    image: '/images/projects/campus-voice.png',
     keyFeatures: [
-      'ML-powered delivery time prediction',
-      'Real-time order tracking',
-      'User authentication and profile management',
-      'Restaurant partner dashboard',
-      'Payment gateway integration',
-      'Admin dashboard for analytics',
+      'Multi-Level Administration: Department admins handle departmental issues while sensitive complaints are escalated to super admins',
+      'Complaint Tracking: Students can submit, view, and track the progress of their complaints in real time',
+      'Role-Based Access Control: Separate dashboards for students, department admins, and super admins',
+      'Confidential Reporting: Secure handling of sensitive issues like harassment and misconduct',
+      'Notification System: Email and in-app alerts keep users updated on complaint status and resolutions',
     ],
-    challenges: {
-      title: 'Development Challenges & Solutions',
-      items: [
-        {
-          challenge: 'Real-time Order Tracking',
-          solution:
-            'Implemented Socket.IO for bi-directional communication between servers and clients, enabling live tracking updates with minimal latency.',
-        },
-        {
-          challenge: 'Delivery Time Optimization',
-          solution:
-            'Developed a machine learning model using historical delivery data to predict accurate delivery times considering factors like traffic, distance, and order volume.',
-        },
-        {
-          challenge: 'Scale & Performance',
-          solution:
-            'Implemented Redis caching, used AWS CloudFront for CDN, optimized database queries with indexing, and containerized deployment with Docker.',
-        },
+    businessModel: {
+      title: 'System Structure',
+      description:
+        'Campus Voice streamlines communication between students and school authorities through a tiered complaint management workflow:',
+      pillars: [
+        'Student Interface: Submit, monitor, and manage complaints seamlessly',
+        'Department Dashboard: View and resolve complaints specific to each department',
+        'Super Admin Oversight: Handle escalations and sensitive issues across the institution',
       ],
     },
-    metrics: {
-      title: 'Performance Metrics',
-      items: [
-        { metric: 'Average Page Load Time', value: '1.2s' },
-        { metric: 'Server Response Time', value: '100ms' },
-        { metric: 'User Retention Rate', value: '78%' },
-        { metric: 'App Store Rating', value: '4.8/5' },
+    targetMarket: [
+      'Universities and tertiary institutions seeking to digitize student feedback channels',
+      'Students needing a faster and safer way to report academic or welfare issues',
+      'Administrative staff looking for centralized complaint management tools',
+      'Educational boards aiming to enhance institutional transparency and accountability',
+    ],
+    mission:
+      'To create a transparent and efficient communication bridge between students and administrators, ensuring every voice is heard and every issue is resolved fairly and securely.',
+    results: {
+      title: 'Results',
+      achievements: [
+        'Developed a robust multi-role complaint management system',
+        'Implemented sensitive complaint routing for confidential case handling',
+        'Improved institutional response efficiency and student trust',
+        'Created a scalable model adaptable for other educational institutions',
       ],
     },
-    securityMeasures: [
-      'Data encryption at rest and in transit',
-      'Regular security audits',
-      'OWASP compliance',
-      'Rate limiting',
-      'Input validation',
-    ],
   },
 ]
