@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'motion/react'
+import ProjectCard from '@/components/custom/project-card'
 
 export default function FeaturedProjects() {
   return (
@@ -21,12 +22,28 @@ export default function FeaturedProjects() {
         <p className="text-muted-foreground text-xl">Some of my works</p>
       </motion.div>
 
+      {/* Card layout for small and medium screens */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.2 }}
         viewport={{ once: true, margin: '-50px' }}
-        className="w-full"
+        className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:hidden"
+      >
+        {portfolioData.projects
+          .filter((project) => project.featured)
+          .map((project, index) => (
+            <ProjectCard key={project.title} project={project} index={index} />
+          ))}
+      </motion.div>
+
+      {/* Sticky scroll for large screens */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        viewport={{ once: true, margin: '-50px' }}
+        className="hidden w-full lg:block"
       >
         <StickyScroll
           content={portfolioData.projects.filter((project) => project.featured)}
