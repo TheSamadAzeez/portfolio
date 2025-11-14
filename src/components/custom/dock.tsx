@@ -75,7 +75,7 @@ export function Dock() {
     <FloatingDock
       items={links}
       desktopClassName="fixed bottom-3 left-1/2 transform -translate-x-1/2 z-[9999] backdrop-blur-xl bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10 rounded-3xl shadow-xl"
-      mobileClassName="fixed bottom-2 right-2 z-[9999]"
+      mobileClassName="fixed bottom-2 right-2 z-[9999] hidden"
     />
   )
 }
