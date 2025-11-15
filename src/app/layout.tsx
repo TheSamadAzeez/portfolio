@@ -42,22 +42,6 @@ export const metadata: Metadata = {
     'Samad Azeez',
   ],
   creator: 'Samad Azeez',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'Samad Azeez Portfolio',
-    title: 'Samad Azeez - Full-Stack Developer & Software Engineer',
-    description:
-      'Seasoned full-stack developer with 4+ years of experience building scalable web applications, mobile apps, and robust backend systems.',
-    images: [
-      {
-        url: '/images/profile-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Samad Azeez - Full-Stack Developer',
-      },
-    ],
-  },
 }
 
 export default function RootLayout({
