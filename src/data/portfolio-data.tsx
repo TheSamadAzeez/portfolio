@@ -11,7 +11,7 @@ export const portfolioData = {
     email: 'azeezsamad2004@gmail.com',
     location: 'Lagos, Nigeria',
     availability: 'Available for hire',
-    imageUrl: '/images/profile-image.jpg',
+    imageUrl: '/images/profile-image.png',
     socialLinks: [
       { href: 'https://github.com/TheSamadAzeez', label: 'GitHub', icon: IconBrandGithub },
       { href: 'https://www.linkedin.com/in/thesamadazeez', label: 'LinkedIn', icon: IconBrandLinkedin },
