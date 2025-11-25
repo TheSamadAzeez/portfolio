@@ -35,7 +35,7 @@ export default function Experiences() {
   useOutsideClick(ref, () => setActive(null))
 
   return (
-    <section className="container mx-auto" id="experience">
+    <section className="container mx-auto mt-20 lg:mt-0" id="experience">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
