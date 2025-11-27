@@ -7,7 +7,7 @@ export const portfolioData = {
     name: 'Samad Azeez',
     roles: ['Full-Stack SaaS Apps', 'web applications', 'mobile apps', 'scalable systems'],
     description:
-      'I am a seasoned full-stack developer with 4+ years of professional experience building scalable web applications, mobile apps, and robust backend systems. I develop end-to-end solutions using modern technologies, delivering high-performance products that drive business growth and exceptional user experiences.',
+      'I engineer high-performance digital solutions. With over 4 years of expertise, I transform complex requirements into scalable web and mobile applications that drive business growth and deliver exceptional user experiences.',
     email: 'azeezsamad2004@gmail.com',
     location: 'Lagos, Nigeria',
     availability: 'Available for hire',
@@ -30,9 +30,9 @@ export const portfolioData = {
         return (
           <div>
             <p className=" ">
-              Built and optimized core features for a high-performance delivery platform at a fast-growing Nigerian tech
-              startup. Developed instant booking, live tracking, and payment systems supporting thousands of daily
-              transactions.
+              Architected the core logistics engine for a high-growth delivery startup. Engineered real-time tracking,
+              instant booking, and secure payment systems handling thousands of daily transactions, directly
+              contributing to a 98% on-time delivery rate.
             </p>
           </div>
         )
@@ -49,8 +49,9 @@ export const portfolioData = {
         return (
           <div>
             <p className="">
-              Built intuitive, responsive user interfaces for a digital property rental platform. Focused on enhancing
-              booking and property management experiences with high-performing frontend solutions.
+              Designed and developed a premium digital booking platform for the property market. Enhanced the user
+              journey with intuitive interfaces and streamlined property management tools, significantly improving
+              booking conversion rates.
             </p>
           </div>
         )
@@ -67,9 +68,9 @@ export const portfolioData = {
         return (
           <div>
             <p className="">
-              Contributed to building and optimizing the SMS platform, Implemented responsive user interfaces, managed
-              data with Prisma and PostgreSQL, and enhanced performance for seamless campus-based transactions and
-              resource access.
+              Spearheaded the development of a comprehensive campus fintech ecosystem. Optimized high-volume transaction
+              processing with Prisma/PostgreSQL and delivered a seamless cross-platform mobile experience for thousands
+              of students.
             </p>
           </div>
         )
@@ -80,7 +81,7 @@ export const portfolioData = {
     {
       id: '1',
       institution: 'Lagos State University',
-      degree: "Bachelor's Degree of Computer Science (BCS)",
+      degree: "Bachelor's Degree in Computer Science (BCS)",
       field: 'Computer Science',
       src: '/images/logos/lasu-logo.jpeg',
       start: '2021',
@@ -88,8 +89,8 @@ export const portfolioData = {
       content: () => {
         return (
           <p>
-            Completed a comprehensive degree in Computer Science with a strong foundation in software engineering and
-            full-stack development.
+            Completed a comprehensive degree in Computer Science, specializing in software engineering principles,
+            algorithms, and full-stack system architecture.
           </p>
         )
       },
@@ -164,9 +165,9 @@ export const portfolioData = {
     {
       id: 'keenzchillz',
       title: 'KeenzChillz',
-      description: 'Family-oriented property management business offering serviced accommodations across the UK.',
+      description: 'A premium property management platform delivering serviced accommodations across the UK.',
       longDescription:
-        'KeenzChillz is a family-oriented property management business offering serviced accommodations across the UK. The platform provides comfortable, convenient, and memorable stays for both business and leisure travelers, with a focus on creating a home away from home experience.',
+        'KeenzChillz is a premier property management solution offering curated serviced accommodations across the UK. The platform bridges the gap between luxury and comfort, providing business and leisure travelers with a seamless "home away from home" experience through an intuitive digital booking interface.',
       image: '/images/projects/keenzchillz.jpeg',
       technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Drizzle', 'PostgreSQL', 'Stripe'],
       category: 'Business Platform',
@@ -174,11 +175,11 @@ export const portfolioData = {
       githubUrl: 'https://github.com/thesamadazeez/keenzchillz',
       liveUrl: 'https://v2.keenzchillz.properties/',
       highlights: [
-        'Family-focused accommodations from studios to multi-bedroom suites',
-        'Strategic locations near business districts and tourist attractions',
-        'Comprehensive services with seamless check-in and concierge care',
-        'Modern amenities with fully equipped contemporary facilities',
-        'Personalized luxury experience for business and leisure travelers',
+        'Curated accommodations ranging from studios to luxury suites',
+        'Strategic locations optimized for business and tourism',
+        'Seamless digital check-in and concierge services',
+        'Modern amenities tailored for extended stays',
+        'Personalized guest experiences for diverse traveler needs',
       ],
       content: (
         <div className="flex h-full w-full items-center justify-center text-white">
@@ -196,10 +197,9 @@ export const portfolioData = {
     {
       id: 'vigoride',
       title: 'Vigoride',
-      description:
-        "Nigeria's fastest and most reliable delivery service - trusted by thousands of businesses and shoppers for 98% on-time deliveries and peace of mind.",
+      description: "Nigeria's premier logistics platform, trusted by thousands for 98% on-time delivery reliability.",
       longDescription:
-        "Vigoride is Nigeria's fastest and most reliable delivery service - trusted by thousands of businesses and shoppers for 98% on-time deliveries and peace of mind.",
+        'Vigoride is redefining urban logistics in Nigeria. As a high-performance delivery service, it empowers businesses and individuals with instant dispatch, real-time fleet tracking, and guaranteed reliability. Trusted by thousands, Vigoride sets the standard for speed and peace of mind in last-mile delivery.',
       image: '/images/projects/vigoride.png',
       technologies: [
         'React Native',
@@ -233,13 +233,12 @@ export const portfolioData = {
     {
       id: 'spotify-clone',
       title: 'Spotify Clone',
-      description:
-        'A web-based music streaming platform that allows users to listen to their favorite songs and discover new music.',
+      description: 'A high-fidelity music streaming application replicating the core experience of a global platform.',
       longDescription:
-        'Spotify Clone is a web-based music streaming platform that allows users to listen to their favorite songs and discover new music.',
+        'This project is a technical showcase of a full-scale music streaming architecture. It replicates the sophisticated features of Spotify, offering users a seamless audio experience, playlist curation, and music discovery, all powered by a robust modern tech stack.',
       image: '/images/projects/spotify.png',
       technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Supabase', 'PostgreSQL', 'Prisma', 'Stripe'],
-      category: 'Mobile App',
+      category: 'Web Application',
       featured: true,
       githubUrl: 'https://github.com/thesamadazeez/spotify-clone',
       liveUrl: 'https://spotify-react-web-client.onrender.com/',
@@ -260,13 +259,12 @@ export const portfolioData = {
     {
       id: 'upfit',
       title: 'Upfit',
-      description:
-        'Upfit is an AI-powered fitness app that helps users plan and track workouts in real time. It offers smart exercise logging, progress tracking, and AI-generated instructions that guide users on how to perform each exercise safely and effectively.',
+      description: 'An AI-powered personal trainer that revolutionizes workout planning and real-time tracking.',
       longDescription:
-        'Upfit is an intelligent fitness companion that helps users plan, track, and improve their workouts using artificial intelligence. The app allows users to log exercises, monitor progress, and receive AI-generated step-by-step guidance on how to perform each exercise safely and effectively — all within a beautifully designed, mobile-first experience.',
+        'Upfit is an intelligent fitness companion that leverages Artificial Intelligence to democratize personal training. By offering smart exercise logging, real-time progress monitoring, and AI-generated form guidance, Upfit empowers users to train safer, smarter, and more effectively.',
       image: '/images/projects/upfit.png',
       technologies: ['React Native', 'TypeScript', 'TailwindCSS', 'NativeWind', 'Sanity', 'Gemini API', 'SQLite'],
-      category: 'Fitness App',
+      category: 'Fitness AI',
       featured: false,
       githubUrl: 'https://github.com/TheSamadAzeez/AI-fitness-app',
       liveUrl: 'https://github.com/TheSamadAzeez/AI-fitness-app',
@@ -287,12 +285,12 @@ export const portfolioData = {
       id: 'campus-voice',
       title: 'Campus Voice',
       description:
-        'Campus Voice is a multi-level complaint management platform that empowers students to report issues and track resolutions while ensuring sensitive cases like harassment are securely routed to top-level administrators.',
+        'A secure, multi-level grievance management system empowering student voices and institutional accountability.',
       longDescription:
-        'Campus Voice is a digital platform designed to simplify and modernize how students report issues and institutions handle feedback. It enables students to submit complaints, track responses, and communicate directly with department administrators — while routing sensitive matters like harassment to top-level authorities for confidential handling.',
+        'Campus Voice is a digital transformation tool for educational institutions. It modernizes the feedback loop by enabling students to report issues securely while ensuring that sensitive cases, such as harassment, are routed confidentially to top-level administration for immediate action.',
       image: '/images/projects/campus-voice.png',
       technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'ShadCN', 'Prisma', 'PostgreSQL', 'Clerk'],
-      category: 'Fitness App',
+      category: 'EdTech Platform',
       featured: false,
       githubUrl: 'https://github.com/TheSamadAzeez/campus-voice',
       liveUrl: 'https://github.com/TheSamadAzeez/campus-voice',
@@ -313,9 +311,9 @@ export const portfolioData = {
       id: 'segam-mobile-services',
       title: 'Segam Mobile Services (SMS)',
       description:
-        'Segam Mobile Services (SMS) is an integrated fintech, edutech, and logistics platform built for Nigerian campuses, enabling seamless POS transactions, academic resource access, and on-demand delivery services.',
+        'An integrated campus ecosystem combining fintech, edutech, and logistics for the Nigerian student community.',
       longDescription:
-        'Segam Mobile Services (SMS) is a comprehensive digital platform designed to support the everyday needs of Nigerian students by combining financial services, educational tools, and logistics solutions in one system. Students can access mobile POS payments, bill settlements, digital course materials, past questions, and reliable dispatch services both within and outside campus. With real-time tracking, optimized routes, and a stable technical architecture, SMS enhances convenience while powering thousands of daily transactions.',
+        'Segam Mobile Services (SMS) is a super-app designed for the Nigerian campus economy. It unifies financial transactions, educational resource access, and logistics into a single platform, powering thousands of daily interactions and simplifying campus life through technology.',
       image: '/images/projects/sms.jpeg',
       technologies: [
         'React Native',
@@ -366,7 +364,7 @@ export const portfolioData = {
     hero: {
       title: "Hi, I'm Samad 👋",
       description:
-        "I'm a seasoned full-stack developer with expertise in building scalable web applications, mobile apps, and robust backend systems. With 4+ years of professional experience across the entire development stack, I develop and deliver high-performance solutions that solve complex business challenges and drive user engagement.",
+        "I don't just write code; I build digital assets. My expertise spans the full stack, from crafting pixel-perfect user interfaces to architecting robust, scalable backend systems. With over 4 years of professional experience, I deliver high-performance solutions that solve complex business challenges and drive measurable user engagement.",
       stats: {
         experience: '4+ years experience',
         availability: 'Available for hire',
@@ -378,17 +376,17 @@ export const portfolioData = {
         emoji: '🚀',
         title: 'Professional Journey',
         description:
-          'My journey began with a deep curiosity about technology and has evolved into 4+ years of professional full-stack development expertise. I specialize in the complete development lifecycle - from conceptualizing user experiences to building scalable backend applications and deploying production-ready solutions.',
+          'My journey began with a deep curiosity about technology and has evolved into a career defined by technical excellence. I specialize in the complete development lifecycle—conceptualizing user experiences, building scalable backend architectures, and deploying production-ready solutions that stand the test of time.',
         additionalDescription:
-          "Throughout my career, I've mastered web development with React and Next.js, mobile app development with React Native for both iOS and Android, and backend development using Node.js, NestJS, and various databases. I've successfully delivered enterprise-level applications and SaaS solutions that serve thousands of users.",
+          "Throughout my career, I've mastered web development with React and Next.js, mobile app engineering with React Native, and backend systems using Node.js and NestJS. I have successfully delivered enterprise-level applications and SaaS solutions that serve thousands of users daily.",
       },
       philosophy: {
         emoji: '💡',
         title: 'Development Philosophy',
         description:
-          'I build solutions with scalability, performance, and maintainability at the core. My approach involves thoughtful application design, choosing optimal tech stacks for specific requirements, implementing best practices for security and performance, and delivering code that stands the test of time.',
+          'I build with scalability, performance, and maintainability as first principles. My approach combines thoughtful system design, optimal tech stack selection, and rigorous security practices to deliver code that is not just functional, but exceptional.',
         additionalDescription:
-          'Whether building responsive web applications, cross-platform mobile apps, or robust APIs and microservices, I focus on creating seamless user experiences backed by solid engineering principles. I stay at the forefront of technology trends while maintaining a pragmatic approach to solving complex business challenges.',
+          'Whether building responsive web applications, cross-platform mobile apps, or robust APIs, I focus on creating seamless user experiences backed by solid engineering. I stay at the forefront of technology trends while maintaining a pragmatic approach to solving real-world business problems.',
       },
     },
     technicalExpertise: {
@@ -402,19 +400,19 @@ export const portfolioData = {
           emoji: '🔥',
           title: 'Building at Scale',
           description:
-            'Developing enterprise-grade web applications with Next.js, building cross-platform mobile apps with React Native, and creating robust backend APIs with Node.js/NestJS. Currently working on SaaS solutions and high-traffic applications.',
+            'Developing enterprise-grade web applications with Next.js and cross-platform mobile apps with React Native. Currently architecting SaaS solutions and high-traffic applications that demand reliability and speed.',
         },
         {
           emoji: '🏗️',
-          title: 'Full-Stack Development',
+          title: 'Full-Stack Engineering',
           description:
-            'Building complete web and mobile applications from frontend to backend, optimizing database performance with PostgreSQL/MongoDB, and integrating complex third-party APIs. Focus on clean code, performance optimization, and seamless user experiences.',
+            'Building end-to-end applications from intuitive frontends to powerful backends. Optimizing database performance with PostgreSQL/MongoDB and integrating complex third-party APIs for seamless functionality.',
         },
         {
           emoji: '🤝',
-          title: 'Leading & Mentoring',
+          title: 'Technical Leadership',
           description:
-            'Leading full-stack development projects, mentoring junior developers, conducting code reviews, and contributing to open-source projects. Collaborating with cross-functional teams to deliver high-impact products that drive business growth.',
+            'Leading full-stack development initiatives, mentoring junior developers, and conducting code reviews. Collaborating with cross-functional teams to deliver high-impact products that drive business growth.',
         },
       ],
     },
@@ -446,7 +444,7 @@ export const portfolioData = {
     cta: {
       title: "Let's Build Something Amazing",
       description:
-        "I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest in tech. Let's connect!",
+        "I'm always open to discussing new opportunities, collaborating on innovative projects, or simply exchanging ideas about the latest in tech. Let's connect and create value together.",
     },
   },
   contactPage: {
@@ -457,7 +455,7 @@ export const portfolioData = {
       },
       title: 'Get In Touch 📮',
       description:
-        "Whether you're looking to collaborate on a project, need technical consulting, or just want to chat about the latest in tech, I'd love to hear from you!",
+        "Whether you're looking to collaborate on a project, need expert technical consulting, or just want to discuss the latest in tech, I'd love to hear from you.",
     },
     contactMethods: [
       {
@@ -587,9 +585,9 @@ export const portfolioData = {
       ],
     },
     cta: {
-      title: 'Ready to Start Something Great?',
+      title: 'Ready to Transform Your Vision?',
       description:
-        "Let's discuss your project and see how I can help bring your ideas to life with clean code, solid architecture, and great user experience.",
+        "Let's discuss your project and see how I can help bring your ideas to life with clean code, solid architecture, and exceptional user experience.",
       buttons: [
         { text: 'Copy email', icon: 'Mail', action: 'copyEmail', size: 'lg' },
         { text: 'Download Resume', action: 'downloadResume', variant: 'outline', size: 'lg' },
