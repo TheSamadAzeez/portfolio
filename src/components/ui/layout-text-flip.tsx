@@ -25,7 +25,7 @@ export const LayoutTextFlip = ({
   }, [])
 
   return (
-    <div className="flex items-center justify-center gap-3">
+    <div className="flex max-w-full items-center justify-center gap-3">
       <motion.span layoutId="subtext" className={cn('" text-2xl font-bold tracking-tight drop-shadow-lg', className)}>
         {text}
       </motion.span>
