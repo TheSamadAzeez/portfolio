@@ -3,7 +3,6 @@
 import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
 import { LayoutTextFlip } from '@/components/ui/layout-text-flip'
 import { portfolioData } from '../../data/portfolio-data'
-import Link from 'next/link'
 import { LinkPreview } from '@/components/ui/link-preview'
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient'
 import Image from 'next/image'
@@ -83,17 +82,13 @@ export default function Hero() {
             className="flex flex-wrap gap-3 pt-4"
           >
             {portfolioData.hero.socialLinks.map((link, index) => (
-              <Link
+              <LinkPreview
                 key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                url={link.href}
                 className="hover:bg-accent rounded-full border px-3 py-3 transition-colors"
               >
-                <LinkPreview url={link.href}>
-                  <link.icon className="h-5 w-5" />
-                </LinkPreview>
-              </Link>
+                <link.icon className="h-5 w-5" />
+              </LinkPreview>
             ))}
           </motion.div>
 

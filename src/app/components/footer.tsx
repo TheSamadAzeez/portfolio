@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { portfolioData } from '../../data/portfolio-data'
 import { LinkPreview } from '@/components/ui/link-preview'
 import { Separator } from '@/components/ui/separator'
@@ -36,16 +35,9 @@ export default function Footer() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:bg-accent transition-colors"
-              >
-                <LinkPreview url={link.href}>
-                  <link.icon className="h-4 w-4" />
-                </LinkPreview>
-              </Link>
+              <LinkPreview url={link.href} className="hover:bg-accent transition-colors">
+                <link.icon className="h-4 w-4" />
+              </LinkPreview>
             </motion.div>
           ))}
         </motion.div>

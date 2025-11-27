@@ -100,17 +100,13 @@ export default function ContactPage() {
                 ) : (
                   <div className="flex justify-center gap-3 md:gap-4">
                     {portfolioData.hero.socialLinks.map((link, index) => (
-                      <Link
+                      <LinkPreview
                         key={index}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        url={link.href}
                         className="hover:bg-accent rounded-full border px-3 py-3 transition-colors"
                       >
-                        <LinkPreview url={link.href}>
-                          <link.icon className="h-4 w-4 md:h-5 md:w-5" />
-                        </LinkPreview>
-                      </Link>
+                        <link.icon className="h-4 w-4 md:h-5 md:w-5" />
+                      </LinkPreview>
                     ))}
                   </div>
                 )}
