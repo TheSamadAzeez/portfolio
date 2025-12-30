@@ -147,7 +147,7 @@ export default async function ProjectDetailsPage({ params }: ProjectDetailsProps
           alt={project.title}
           width={800}
           height={600}
-          className="mx-auto border shadow-2xl transition-all duration-600 ease-in-out hover:scale-105"
+          className="mx-auto rounded-xl border shadow-2xl transition-all duration-600 ease-in-out hover:scale-105"
         />
 
         <Separator />
